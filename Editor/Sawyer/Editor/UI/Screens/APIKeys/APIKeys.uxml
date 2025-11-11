@@ -1,0 +1,58 @@
+<ui:UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:ui="UnityEngine.UIElements"
+         xmlns:sawyer="Sawyer.Editor.UI.Components" editor-extension-mode="False">
+    
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/IconInputField/IconInputField.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/USS/SawyerCommon.uss?fileID=7433441132597879392&amp;guid=33e2f81dcba6e2144801a40025c5cf31&amp;type=3#SawyerCommon" />
+    <ui:VisualElement name="root" class="root-container">
+        <sawyer:HeaderBar />
+
+            <ui:VisualElement class="modal-panel">
+                
+                <ui:ScrollView class="keys-container">
+                   
+                    <ui:VisualElement class="api-key-section">
+                        <ui:VisualElement class="provider-header">
+                            <ui:Image name="openai-icon" class="provider-icon" />
+                            <ui:Label text="OpenAI" class="provider-name" />
+                        </ui:VisualElement>
+                        <sawyer:IconInputField
+                            name="openai-key"
+                            class="input-field"
+                            placeholder="sk-ant-..."
+                            />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="api-key-section">
+                        <ui:VisualElement class="provider-header">
+                            <ui:Image name="anthropic-icon" class="provider-icon" />
+                            <ui:Label text="Anthropic (Claude)" class="provider-name" />
+                        </ui:VisualElement>
+
+                        <sawyer:IconInputField
+                            name="anthropic-key"
+                            class="input-field"
+                            placeholder="dsk-..."
+                        />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="api-key-section">
+                        <ui:VisualElement class="provider-header">
+                            <ui:Image name="google-icon" class="provider-icon" />
+                            <ui:Label text="Gemini (Google)" class="provider-name" />
+                        </ui:VisualElement>
+                        <sawyer:IconInputField
+                            name="google-key"
+                            class="input-field"
+                            placeholder="dsk-..."
+                        />
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <ui:VisualElement class="button-row">
+                    <ui:Button name="cancel-button" text="Cancel" class="cancel-button" />
+                    <ui:Button name="save-button" text="Save Changes" class="save-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        <ui:VisualElement name="error-bar" class="error-bar" style="display: none;">
+            <ui:VisualElement class="icon error-icon" />
+            <ui:Label name="validation-error" class="validation-error-text" text="Please enter a valid OpenAI API key." />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

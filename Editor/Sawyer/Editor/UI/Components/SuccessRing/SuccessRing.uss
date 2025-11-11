@@ -1,0 +1,20 @@
+/* SuccessRing.uss */
+
+.success-ring {
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+/* The success image */
+.success-image {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    -unity-background-scale-mode: scale-to-fit;
+}
+

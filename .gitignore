@@ -1,0 +1,70 @@
+
+# Unity generated files - Note: Meta files are included for proper Unity package management
+# *.meta - commented out to allow .meta files for Unity packages
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+
+
+# PythonPlatform - ignore everything except dist folder
+Editor/PythonPlatform/*
+!Editor/PythonPlatform/dist/
+!Editor/PythonPlatform/dist/**
+
+# PythonPlatform - ignore everything except dist folder
+.idea/
+*.sln.meta
+*.csproj.meta
+
+# Build artifacts
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+
+# Never ignore these Unity files
+!*.unitypackage
+!*.asset
+!*.prefab
+!*.unity
+!*.cs
+!*.js
+!*.shader
+!*.cginc
+!*.hlsl
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Local environment variables
+.env
+
+# Server status files (these are generated at runtime)
+server_status.json

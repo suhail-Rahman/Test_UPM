@@ -1,0 +1,843 @@
+﻿.screen-container{
+    margin: 0;
+}
+
+.root-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*background-image: url("project://database/Assets/Editor/Sawyer/Resources/chat_grid.png");*/
+    -unity-background-scale-mode: scale-and-crop;
+    background-color: #333333;
+}
+
+
+.page-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+.header-bar {
+    background-color: #3F3F3F;
+    border-bottom-width: 1px;
+    border-bottom-color:  #444;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    height: 56px;
+    flex-direction: row;
+}
+.header-title {
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: #ffffff;
+}
+.header-actions {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    flex-direction: row;
+}
+.header-button-history {
+
+    margin-right: 15px;
+    background-color: transparent;
+    border-width: 0;
+    width: 18px;
+    height: 16px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_history.png");
+}
+
+
+
+.header-button-setting {
+
+    margin-right: 10px;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border-width: 0;
+
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_settings.png");
+}
+.newchat-button{
+    border-radius: 2px;
+    background-color: #2A2A2A;
+    width: 90px;
+    height: 30px;
+    justify-content: space-between;
+    -unity-text-align: middle-center;
+    flex-direction: row;
+    border-width: 0;
+    margin-right: 12px;
+}
+
+.newchat-button-icon{
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_newchat.png");
+    height: 18px;
+    width: 16px;
+    align-self: center;
+    margin: 4px 4px;
+    -unity-background-scale-mode: scale-to-fit;
+    font-size: 13px;
+}
+.newchat-button-label{
+    font-size: 11px;
+    -unity-font: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/font/Inter_18pt-Light.ttf");
+}
+
+.settings-container {
+    position: relative;
+}
+.dropdown-panel {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    background-color: #2a2a2a;
+    padding: 6px 0;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    width: 160px;
+
+}
+.dropdown-button {
+    padding: 8px 12px;
+    -unity-text-align: middle-left;
+    font-size: 13px;
+    color: white;
+
+    justify-content: flex-start;
+}
+
+
+.main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    
+}
+.main-area-bg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 24px 0;
+    flex-grow: 10;
+}
+.hero-section {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8px;
+    display: flex;
+}
+.logo {
+    width: 72px;
+    height: 72px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/mascot_fox.png");
+}
+.hero-title {
+    font-size: 20px;
+    -unity-font-style: bold;
+    margin-top: 10px;
+}
+.hero-subtitle {
+    font-size: 13px;
+    color: #bbbbbb;
+    text-align: center;
+}
+.chat-scroll {
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px 12px 12px;
+    border-radius: 6px;
+    overflow-y: auto;
+    min-height: 120px;
+}
+
+
+.footer-area {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.footer-area-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 110; /* Ensure the button stays above the panel */
+}
+
+.footer-area-bg {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/chat_bottom_bg.png");
+}
+
+.typing-label {
+    font-size: 13px;
+    margin-bottom: 8px;
+    -unity-font: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/font/Inter_18pt-Light.ttf");
+    -unity-text-align: lower-center;
+}
+
+.input-row {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    font-size: 12;
+    border-radius:3;
+}
+
+.unity-base-text-field__input{
+    border-width: 0;
+    color: #CDCDCD;
+    font-size: 12;
+    background-color: #282828;
+}
+
+.unity-base-text-field__input{
+    border-width: 0;
+    font-size: 16;
+    background-color: #282828;
+}
+
+
+.chat-input {
+    flex-grow: 1;
+    font-size: 50px;
+    -unity-text-align: middle-left;
+    white-space: normal;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: #282828;
+    border-color: transparent;
+    overflow-y: auto;
+
+    
+}
+.input-scroll {
+    flex-grow: 1;
+    font-size: 50px;
+    max-height: 110px;
+    white-space: normal;
+    
+    border-width: 0;
+    border-radius: 4px;
+    background-color: #282828;
+    border-color: transparent;
+    align-self: stretch;
+}
+
+.unity-scroller--horizontal{
+    display: none;
+}
+
+
+.chat-input-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-self: stretch;
+    justify-content: space-between;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.attach-button
+{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.send-button {
+    width: 30px;
+    height: 30px;
+    background-color: #333333;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.attach-icon {*/
+/*    width: 11px;*/
+/*    height: 20px;*/
+/*    background-image: url("project://database/Assets/Editor/Sawyer/Resources/icon_attach.png");*/
+/*}*/
+
+.send-icon {
+    width: 20px;
+    height: 18px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_send.png");
+}
+
+.footer-bottom {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 6px;
+    display: flex;
+}
+.footer-bottom-spacer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+    flex-grow: 1;
+}
+.version-label {
+    font-size: 11px;
+    color: #BDBDBD;
+    -unity-font: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/font/Inter_18pt-Thin.ttf");
+    -unity-text-align: middle-center;
+}
+.model-selector {
+    font-size: 12px;
+}
+
+
+.compact .header-bar {
+    flex-direction: row;
+    align-items: flex-start;
+}
+.compact .header-actions {
+    align-self: flex-end;
+    flex-direction: column;
+    margin: 4px;
+}
+.narrow .chat-input {
+    font-size: 12px;
+    max-height: 160px;
+    padding: 4px;
+}
+.narrow .header-title,
+.narrow .hero-title {
+    font-size: 15px;
+}
+.narrow .hero-subtitle {
+    font-size: 12px;
+}
+.narrow .dropdown-button {
+    font-size: 12px;
+}
+
+.unity-enum-field__input{
+    background-color: transparent;
+    border-width: 0;
+    border-color: transparent;
+}
+
+
+.unity-base-slider__dragger{
+    border-radius: 0;
+    color: #4D4D4D;
+}
+.unity-scroller{
+    border-color: transparent;
+    color: #2E2E2E;
+}
+
+.unity-scroller__high-button{
+    color: #4D4D4D;
+}
+.unity-scroller__low-button{
+    color: #4D4D4D;
+}
+
+
+
+.dropdown-panel {
+    padding: 12px;
+    background-color: #282828;
+    border-radius: 8px;
+    flex-direction: column;
+    margin: 6px;
+    width: 200px;
+}
+
+.dropdown-header {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: #FFF7F7;
+    margin: 15px;
+}
+
+.dropdown-button {
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border-width: 0;
+    height: 32px;
+    padding-left: 4px;
+    margin: 8px;
+}
+
+.dropdown-button:hover {
+    background-color: #2a2a2a;
+}
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.dropdown-label {
+    font-size: 13px;
+    color: #FFF7F7;
+}
+
+
+
+.code-action-button {
+    background-color: #3a3a3a;
+    border-width: 1px;
+    border-color: #444;
+    border-radius: 3px;
+    color: #d4d4d4;
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-left: 4px;
+}
+
+.code-action-button:hover {
+    background-color: #4a4a4a;
+    border-color: #555;
+}
+
+.code-action-button:active {
+    background-color: #555;
+    color: #ffffff;
+}
+
+.copy-toast {
+    position: absolute;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: white;
+    font-size: 12px;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+}
+
+.copy-toast.visible {
+    opacity: 1;
+}
+
+.attachment-preview-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 6px;
+    padding: 4px;
+    align-self: flex-start;
+    
+}
+
+.attachment-thumbnail {
+    flex-direction: row;
+    align-items: center;
+
+
+    padding: 2px;
+}
+
+.attachment-remove-button {
+
+    margin-left: 4px;
+    background-color: black;
+    color: black;
+    border-radius: 15px;
+    padding: 2px 6px;
+    border-width: 0;
+
+    
+    
+}
+.error-message .chat-bubble-content {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.message-container {
+    margin: 8px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+.typing-indicator__after {
+    content: "...";
+    animation: ellipsis 1.4s infinite;
+}
+
+@keyframes ellipsis {
+    0% { content: "."; }
+    33% { content: ".."; }
+    66% { content: "..."; }
+}
+
+.send-button {
+    transition: all 0.2s ease;
+}
+
+.send-button:hover {
+    background-color: #045cc5;
+}
+
+.send-button:active {
+    background-color: #034a9e;
+}
+
+.tool-call-button {
+    transition: all 0.2s ease;
+}
+
+.tool-call-button:hover {
+    background-color: #045cc5;
+}
+
+.tool-call-button:active {
+    background-color: #034a9e;
+}
+
+.tool-call-button:disabled {
+    background-color: #6c757d;
+    cursor: pan;
+}
+
+.new-chat-button {
+    margin-right: 12px;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    border-width: 0;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+
+.new-chat-button:hover {
+    background-color: #3a3a3a;
+}
+
+.new-chat-button:active {
+    background-color: #444444;
+}
+
+
+/* Tool Call Popup Styles */
+.tool-call-popup {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px;
+    max-width: 500px;
+    border-width: 1px;
+    border-color: #444;
+    flex-shrink: 0;
+}
+
+.tool-call-title {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.tool-call-description {
+    font-size: 13px;
+    color: #bbbbbb;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.tool-call-args-label {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.tool-call-args {
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    color: #d4d4d4;
+    border-width: 1px;
+    border-color: #3a3a3a;
+    white-space: normal;
+    margin-bottom: 16px;
+    font-family: monospace;
+}
+
+.tool-call-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.tool-call-confirm,
+.tool-call-reject {
+    padding: 8px 20px;
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 13px;
+    -unity-font-style: bold;
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.tool-call-confirm {
+    background-color: #EC5B1F;
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.tool-call-confirm:hover {
+    background-color: #b84910;
+}
+
+.tool-call-confirm:active {
+    background-color: #a14110;
+}
+
+.tool-call-reject {
+    background-color: #515151;
+    color: #ffffff;
+}
+
+.tool-call-reject:hover {
+    background-color: #323232;
+}
+
+.tool-call-reject:active {
+    background-color: #252525;
+}
+
+/* Tool Status Messages */
+.tool-status-message {
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-left-width: 3px;
+    border-left-color: #666;
+}
+
+.tool-status-success {
+    border-left-color: #4caf50;
+}
+
+.tool-status-error {
+    border-left-color: #f44336;
+}
+
+.tool-status-rejected {
+    border-left-color: #ff9800;
+}
+
+
+
+/* Additional styles for the notes button */
+
+
+.expand-notes-button {
+    align-self: flex-end;
+    position: absolute;
+    border-radius: 4px 4px 4px 4px;
+    border-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #282828;
+    width: 160px;
+    height: 36px;
+    margin-top: -50px;
+    right: 4px;
+    /*transition: all 0.2s ease;*/
+    
+}
+
+
+
+.expand-notes-button:hover {
+    background-color: #3a3a3a;
+}
+
+.expand-notes-button:active {
+    background-color: #282828;
+
+}
+
+.expand-notes-button.active {
+    background-color: #282828;
+    position: absolute;
+    left: -2px;
+    border-radius: 0;
+}
+
+.notes-icon {
+    width: 12px;
+    height: 12px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_cross.png");
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: rotate;
+    transition-duration: 0.2s;
+    rotate: 180deg;
+    padding-right: 18px;
+}
+
+.active .notes-icon {
+    rotate: 0deg;
+}
+
+.notes-icon-logo {
+    width: 16px;
+    height: 16px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/mascot_fox.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+
+.playbook-dropdown {
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.98);
+
+    border-radius: 8px;
+    max-width: 140px;
+    min-width: 100px;
+}
+
+#multiple-playbook-warning {
+    border-width: 1px;
+    border-color: rgba(255, 100, 100, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#multiple-playbook-warning Label {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+
+.playbook-dropdown-scroll {
+    max-height: 250px;
+    flex-grow: 1;
+}
+
+.playbook-dropdown-item {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+    min-height: 10px;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.playbook-dropdown-item:hover,
+.playbook-dropdown-item-hover {
+    background-color: rgba(80, 120, 200, 0.2);
+}
+
+.playbook-dropdown-item-selected {
+    background-color: #b84910;
+    border-left-width: 3px;
+    border-left-color: var(--sawyer-primary-active);
+}
+
+.playbook-item-content {
+    padding: 8px 12px;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.playbook-item-name {
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: rgba(220, 220, 220, 1);
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.playbook-item-description {
+    font-size: 11px;
+    color: rgba(180, 180, 180, 1);
+    margin-bottom: 4px;
+    white-space: normal;
+    flex-wrap: wrap;
+}
+
+.playbook-item-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+.playbook-item-tag {
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 10px;
+    color: rgba(200, 200, 200, 1);
+    margin: 1px 2px;
+}
+
+.playbook-dropdown-hint {
+    padding: 4px 8px;
+    font-size: 10px;
+    color: rgba(120, 120, 120, 1);
+    background-color: rgba(30, 30, 30, 0.8);
+    border-top-width: 1px;
+    border-top-color: rgba(60, 60, 60, 0.5);
+    -unity-text-align: middle-center;
+}
+

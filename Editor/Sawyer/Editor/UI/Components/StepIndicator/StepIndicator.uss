@@ -1,0 +1,123 @@
+/* StepIndicator.uss */
+
+.step-indicator {
+    flex-direction: column;
+    width: 80%;
+
+    flex-grow: 0;
+    margin-bottom: 3%;
+    flex-shrink: 0;
+}
+
+
+
+
+/* Dots and lines container */
+.step-indicator__dots-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Step dots */
+.step-indicator__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+}
+
+.step-indicator__dot--inactive {
+    background-color: #5E5E5E; /* Grey for inactive steps */
+}
+
+.step-indicator__dot--current {
+    background-color: #FF5722; /* Orange for current step */
+    width: 15px;
+    height: 15px;
+}
+
+.step-indicator__dot--done {
+    background-color: #E85830; /* Green for completed steps */
+}
+
+
+.step-indicator__dot--done-all {
+    background-color: #33A510; /* Green for completed steps */
+}
+
+/* Connecting lines */
+.step-indicator__line {
+    height: 2px;
+    flex-grow: 1;
+    min-width: 50px;
+    max-width: 100%;
+    background-color: #5E5E5E;
+}
+
+.step-indicator__line--inactive {
+    height: 2px;
+    flex-grow: 1;
+    min-width: 50px;
+    max-width: 100%;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/step_line_gradient_inactive.png");
+    background-color: #5E5E5E; /* Grey for inactive lines */
+}
+
+.step-indicator__line--done {
+    height: 2px;
+    flex-grow: 1;
+    min-width: 50px;
+    max-width: 100%;
+    background-color: #E85830; /* Green for completed lines */
+}
+
+.step-indicator__line--done-all {
+    height: 2px;
+    flex-grow: 1;
+    min-width: 50px;
+    max-width: 100%;
+    background-color: #33A510; /* Green for completed lines */
+}
+
+/* Labels container */
+.step-indicator__labels-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+/* Step labels */
+.step-indicator__label {
+    -unity-text-align: middle-left;
+    font-size: 12px;
+    width: 80px;
+    white-space: nowrap;
+    overflow: visible;
+    -unity-font: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/font/Inter_18pt-Light.ttf");
+    text-overflow: ellipsis;
+   
+    flex-grow: 0;
+    color: #CDCDCD;
+
+    margin-top: 8px;
+
+}
+
+.step-indicator__label--inactive {
+    color: #AAAAAA; /* Light grey for inactive labels */
+    opacity: 0;
+}
+
+.step-indicator__label--current {
+    color: #FFFFFF; /* White for current label */
+    -unity-font-style: normal;
+    opacity: 0.5;
+}
+
+.step-indicator__label--done {
+    color: #ffffff;
+    opacity: 0;/* Green for completed labels */
+}

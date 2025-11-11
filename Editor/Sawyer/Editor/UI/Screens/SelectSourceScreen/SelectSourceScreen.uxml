@@ -1,0 +1,99 @@
+<UXML xmlns="UnityEngine.UIElements"
+      xmlns:ui="UnityEngine.UIElements"
+      xmlns:sawyer="Sawyer.Editor.UI.Components">
+    
+    <!-- Style sheets -->
+    <Style src="../../USS/SawyerCommon.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StepIndicator/StepIndicator.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/DirectoryTreeView/DirectoryTreeView.uss" />
+    
+    <!-- Main content container -->
+    <ui:VisualElement class="content-container">
+        <ui:VisualElement name="top-area-bg" class="top-area-bg"/>
+        <!-- Logo and Progress -->
+        <ui:VisualElement name="top-section" class="top-section">
+            <ui:VisualElement class="logo-wrapper">
+                <sawyer:LogoIcon name="logo-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <!-- Step Indicator -->
+        <sawyer:StepIndicator name="step-indicator" class="step-indicator-bar" />
+        
+        <!-- Center Card -->
+        <ui:VisualElement class="card-section">
+            <ui:Label class="title-select-code" text="Index your codebase" />
+            <ui:Label class="subtitle-select-code"
+                     text="Sawyer needs to understand your code to assist you effectively. Select the scripts that represent your game’s core logic." />
+            
+            <ui:Label class="subtitle-select-code2"
+                      text="Skip anything from plugins, packages, or external libraries." />
+
+            <!-- Source selection button -->
+            <ui:VisualElement class="source-selection">
+                <ui:Button name="source-code-button" class="source-code-button">
+                    <ui:VisualElement style="flex-direction:column;">
+                        <ui:Label text="Source Code" class="file-title" />
+                        <ui:Label text="All your .cs files" class="file-subtitle" />
+                        
+                    </ui:VisualElement>
+                    <ui:Label text="+" class="plus-icon" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Source Selection Modal -->
+        <ui:VisualElement name="source-modal" class="modal-container">
+            <ui:VisualElement class="modal-backdrop" />
+            
+            <ui:VisualElement class="modal-panel">
+                <!-- Modal Header -->
+                <ui:Label class="modal-header" text="Pick your files to index" />
+                
+                <!-- Select All / Deselect All Controls -->
+                <ui:VisualElement name="selection-controls" class="selection-controls">
+                    <ui:Button name="select-all-button" class="start-button" style="display:none;" >
+                        <ui:Label text="Select All" style="color:white;" />
+                    </ui:Button>
+                    <ui:Button name="deselect-all-button" class="deselect-button" text="Deselect All">
+                        <!-- <ui:Label text="Deselect All" style="color:white;" /> -->
+                    </ui:Button>
+                </ui:VisualElement>
+                
+                <!-- Directory Tree Container -->
+                <ui:ScrollView name="directory-tree-container" class="directory-scroll-container" show-vertical-scroller="true" />
+
+                
+                <!-- File Counter -->
+                <ui:Label name="file-count-label" 
+                         text="Total scripts selected: 0" 
+                         style="color:#CCCCCC; margin-top:5px; margin-bottom:16px;" />
+                
+                <!-- Action Buttons -->
+                <ui:VisualElement style="flex-direction:row; justify-content:space-between;">
+                    <ui:Button name="cancel-modal-button" class="modal-cancel-button">
+                        <ui:Label text="Cancel" style="color:white;" />
+                    </ui:Button>
+                    
+                    <ui:Button name="confirm-modal-button" class="modal-confirm-button">
+                        <ui:Label text="Start Indexing" style="color:white;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Navigation Buttons -->
+        <ui:VisualElement name="nav-buttons" class="nav-buttons" style="display:none;">
+            <sawyer:PrimaryActionButton
+                name="back-button"
+                class="nav-button"
+                text="←"
+                style="visibility: hidden;" />
+            <sawyer:PrimaryActionButton
+                name="next-button"
+                class="nav-button active"
+                text="→" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</UXML>

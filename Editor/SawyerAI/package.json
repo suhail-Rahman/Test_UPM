@@ -1,0 +1,26 @@
+{
+  "name": "com.unakin.sawyerai.compatibility",
+  "version": "1.0.0",
+  "displayName": "SawyerAI (Cross-Version Compatible)",
+  "description": "SawyerAI package with Unity Compatibility Layer for cross-version support (Unity 2022-6+)",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "keywords": [
+    "sawyerai",
+    "unity",
+    "compatibility",
+    "cross-version",
+    "ai",
+    "tools"
+  ],
+  "author": {
+    "name": "Unakin",
+    "email": "support@unakin.ai"
+  },
+  "compatibilityInfo": {
+    "technology": "Unity Compatibility Layer",
+    "supportedVersions": ["2022.x", "2023.3+", "6.x+"],
+    "buildUnityVersion": "6000.0.44f1",
+    "buildDate": "2025-11-11 16:57:52"
+  }
+}

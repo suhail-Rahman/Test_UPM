@@ -1,0 +1,53 @@
+{
+  "env_var": "ANTHROPIC_API_KEY",
+  "models": {
+    "claude-sonnet-4-5-20251022": {
+      "name": "claude-sonnet-4-5-20250929",
+      "description": "Claude Sonnet 4.5 - Our smartest model for complex agents and coding",
+      "aliases": ["claude-sonnet-4-5",
+      "anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "claude-sonnet-4-5@20250929",
+      "claude-sonnet-4-5-20250929"
+       ],
+      "provider": "anthropic",
+      "default_temp": 0.5,
+      "supports_thinking": false,
+      "supports_vision": false,
+      "supports_tools": true,
+      "max_tokens": 64000,
+      "context_window": 200000
+    },
+    "claude-sonnet-4-20250514": {
+      "name": "claude-sonnet-4-20250514",
+      "description": "Claude Sonnet 4 - High-performance model with exceptional reasoning",
+      "aliases": [
+        "claude-sonnet-4-0",
+        "anthropic.claude-sonnet-4-20250514-v1:0",
+        "claude-sonnet-4@20250514"
+      ],
+      "provider": "anthropic",
+      "default_temp": 0.5,
+      "supports_thinking": false,
+      "supports_vision": false,
+      "supports_tools": true,
+      "max_tokens": 64000,
+      "context_window": 200000
+    },
+    "claude-haiku-4-5-20251001": {
+      "name": "claude-haiku-4-5-20251001",
+      "description": "Claude Haiku 4.5 - Our fastest model with near-frontier intelligence",
+      "aliases": [
+        "claude-haiku-4-5",
+        "anthropic.claude-haiku-4-5-20251001-v1:0",
+        "claude-haiku-4-5@20251001"
+      ],
+      "provider": "anthropic",
+      "default_temp": 0.7,
+      "supports_thinking": false,
+      "supports_vision": false,
+      "supports_tools": true,
+      "max_tokens": 16384,
+      "context_window": 200000
+    }
+  }
+}

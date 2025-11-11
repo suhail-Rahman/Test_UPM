@@ -1,0 +1,434 @@
+2025-11-07 14:43:10,458 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 14:43:20,500 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 55562
+2025-11-07 14:43:20,500 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: c98736a0-f0e9-4d0f-acad-4ceb2502beb4 - Type: system_notification - Conversation: None
+2025-11-07 14:43:20,500 - notification_service - INFO - publish:229 - Publishing event c98736a0-f0e9-4d0f-acad-4ceb2502beb4 of type system_notification for conversation None
+2025-11-07 14:43:20,502 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event c98736a0-f0e9-4d0f-acad-4ceb2502beb4
+2025-11-07 14:43:20,502 - notification_service - INFO - publish:246 - Event c98736a0-f0e9-4d0f-acad-4ceb2502beb4 will be sent to 0 out of 0 subscribers
+2025-11-07 14:43:20,502 - notification_service - INFO - publish:261 - No eligible subscribers for event c98736a0-f0e9-4d0f-acad-4ceb2502beb4
+2025-11-07 14:45:10,066 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 14:45:19,875 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60329
+2025-11-07 14:45:19,875 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 620ba694-fa61-4a9f-825b-03662b686de8 - Type: system_notification - Conversation: None
+2025-11-07 14:45:19,876 - notification_service - INFO - publish:229 - Publishing event 620ba694-fa61-4a9f-825b-03662b686de8 of type system_notification for conversation None
+2025-11-07 14:45:19,876 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 620ba694-fa61-4a9f-825b-03662b686de8
+2025-11-07 14:45:19,876 - notification_service - INFO - publish:246 - Event 620ba694-fa61-4a9f-825b-03662b686de8 will be sent to 0 out of 0 subscribers
+2025-11-07 14:45:19,876 - notification_service - INFO - publish:261 - No eligible subscribers for event 620ba694-fa61-4a9f-825b-03662b686de8
+2025-11-07 16:15:55,224 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 16:16:51,671 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 16:21:08,278 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 16:21:20,279 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 57828
+2025-11-07 16:21:20,280 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 05309153-579c-498d-8cd9-45bf399de655 - Type: system_notification - Conversation: None
+2025-11-07 16:21:20,280 - notification_service - INFO - publish:229 - Publishing event 05309153-579c-498d-8cd9-45bf399de655 of type system_notification for conversation None
+2025-11-07 16:21:20,281 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 05309153-579c-498d-8cd9-45bf399de655
+2025-11-07 16:21:20,281 - notification_service - INFO - publish:246 - Event 05309153-579c-498d-8cd9-45bf399de655 will be sent to 0 out of 0 subscribers
+2025-11-07 16:21:20,282 - notification_service - INFO - publish:261 - No eligible subscribers for event 05309153-579c-498d-8cd9-45bf399de655
+2025-11-07 16:23:47,252 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 16:23:58,390 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 62313
+2025-11-07 16:23:58,391 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 564957f9-d3b9-4fd5-a83f-b9daa99f0e33 - Type: system_notification - Conversation: None
+2025-11-07 16:23:58,392 - notification_service - INFO - publish:229 - Publishing event 564957f9-d3b9-4fd5-a83f-b9daa99f0e33 of type system_notification for conversation None
+2025-11-07 16:23:58,392 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 564957f9-d3b9-4fd5-a83f-b9daa99f0e33
+2025-11-07 16:23:58,393 - notification_service - INFO - publish:246 - Event 564957f9-d3b9-4fd5-a83f-b9daa99f0e33 will be sent to 0 out of 0 subscribers
+2025-11-07 16:23:58,393 - notification_service - INFO - publish:261 - No eligible subscribers for event 564957f9-d3b9-4fd5-a83f-b9daa99f0e33
+2025-11-07 16:27:17,301 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-07 16:27:27,265 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 62889
+2025-11-07 16:27:27,267 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 87682f00-595b-4a0e-b752-b73484e20e41 - Type: system_notification - Conversation: None
+2025-11-07 16:27:27,268 - notification_service - INFO - publish:229 - Publishing event 87682f00-595b-4a0e-b752-b73484e20e41 of type system_notification for conversation None
+2025-11-07 16:27:27,269 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 87682f00-595b-4a0e-b752-b73484e20e41
+2025-11-07 16:27:27,269 - notification_service - INFO - publish:246 - Event 87682f00-595b-4a0e-b752-b73484e20e41 will be sent to 0 out of 0 subscribers
+2025-11-07 16:27:27,270 - notification_service - INFO - publish:261 - No eligible subscribers for event 87682f00-595b-4a0e-b752-b73484e20e41
+2025-11-11 13:07:50,159 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:08:55,539 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:09:05,756 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 64615
+2025-11-11 13:09:05,758 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: ba78d932-5e15-4d14-aa2c-75ac9ce03a39 - Type: system_notification - Conversation: None
+2025-11-11 13:09:05,759 - notification_service - INFO - publish:229 - Publishing event ba78d932-5e15-4d14-aa2c-75ac9ce03a39 of type system_notification for conversation None
+2025-11-11 13:09:05,760 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event ba78d932-5e15-4d14-aa2c-75ac9ce03a39
+2025-11-11 13:09:05,760 - notification_service - INFO - publish:246 - Event ba78d932-5e15-4d14-aa2c-75ac9ce03a39 will be sent to 0 out of 0 subscribers
+2025-11-11 13:09:05,761 - notification_service - INFO - publish:261 - No eligible subscribers for event ba78d932-5e15-4d14-aa2c-75ac9ce03a39
+2025-11-11 13:10:03,692 - notification_service - INFO - publish_scratchpad_update:266 - Publishing scratchpad update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24: updated section 'memory'
+2025-11-11 13:10:03,695 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 7f024ca0-7dd9-4fc8-95a5-e6ed9fe2a45f - Type: scratchpad_update - Conversation: f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,695 - notification_service - INFO - publish:229 - Publishing event 7f024ca0-7dd9-4fc8-95a5-e6ed9fe2a45f of type scratchpad_update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,695 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 7f024ca0-7dd9-4fc8-95a5-e6ed9fe2a45f
+2025-11-11 13:10:03,695 - notification_service - INFO - publish:246 - Event 7f024ca0-7dd9-4fc8-95a5-e6ed9fe2a45f will be sent to 0 out of 0 subscribers
+2025-11-11 13:10:03,696 - notification_service - INFO - publish:261 - No eligible subscribers for event 7f024ca0-7dd9-4fc8-95a5-e6ed9fe2a45f
+2025-11-11 13:10:03,696 - notification_service - INFO - publish_scratchpad_update:266 - Publishing scratchpad update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24: updated section 'plan'
+2025-11-11 13:10:03,698 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: cdd8659f-ab82-4f6b-968f-da68c0345b5c - Type: scratchpad_update - Conversation: f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,698 - notification_service - INFO - publish:229 - Publishing event cdd8659f-ab82-4f6b-968f-da68c0345b5c of type scratchpad_update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,698 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event cdd8659f-ab82-4f6b-968f-da68c0345b5c
+2025-11-11 13:10:03,698 - notification_service - INFO - publish:246 - Event cdd8659f-ab82-4f6b-968f-da68c0345b5c will be sent to 0 out of 0 subscribers
+2025-11-11 13:10:03,700 - notification_service - INFO - publish:261 - No eligible subscribers for event cdd8659f-ab82-4f6b-968f-da68c0345b5c
+2025-11-11 13:10:03,700 - notification_service - INFO - publish_scratchpad_update:266 - Publishing scratchpad update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24: updated section 'scratchpad'
+2025-11-11 13:10:03,700 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 96c57c30-5eda-402b-aedc-781096267684 - Type: scratchpad_update - Conversation: f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,701 - notification_service - INFO - publish:229 - Publishing event 96c57c30-5eda-402b-aedc-781096267684 of type scratchpad_update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,702 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 96c57c30-5eda-402b-aedc-781096267684
+2025-11-11 13:10:03,702 - notification_service - INFO - publish:246 - Event 96c57c30-5eda-402b-aedc-781096267684 will be sent to 0 out of 0 subscribers
+2025-11-11 13:10:03,703 - notification_service - INFO - publish:261 - No eligible subscribers for event 96c57c30-5eda-402b-aedc-781096267684
+2025-11-11 13:10:03,703 - notification_service - INFO - publish_scratchpad_update:266 - Publishing scratchpad update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24: cleared section 'all'
+2025-11-11 13:10:03,704 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: b721fade-5e3b-452d-9db9-5be30ccef385 - Type: scratchpad_update - Conversation: f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,704 - notification_service - INFO - publish:229 - Publishing event b721fade-5e3b-452d-9db9-5be30ccef385 of type scratchpad_update for conversation f9a550c6-9840-4dd3-a2cc-afc1f9407b24
+2025-11-11 13:10:03,706 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event b721fade-5e3b-452d-9db9-5be30ccef385
+2025-11-11 13:10:03,706 - notification_service - INFO - publish:246 - Event b721fade-5e3b-452d-9db9-5be30ccef385 will be sent to 0 out of 0 subscribers
+2025-11-11 13:10:03,706 - notification_service - INFO - publish:261 - No eligible subscribers for event b721fade-5e3b-452d-9db9-5be30ccef385
+2025-11-11 13:11:13,585 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:11:23,850 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 65135
+2025-11-11 13:11:23,851 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 61ccd9b4-6f49-4139-bc2f-b9b3444db7f1 - Type: system_notification - Conversation: None
+2025-11-11 13:11:23,852 - notification_service - INFO - publish:229 - Publishing event 61ccd9b4-6f49-4139-bc2f-b9b3444db7f1 of type system_notification for conversation None
+2025-11-11 13:11:23,852 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 61ccd9b4-6f49-4139-bc2f-b9b3444db7f1
+2025-11-11 13:11:23,852 - notification_service - INFO - publish:246 - Event 61ccd9b4-6f49-4139-bc2f-b9b3444db7f1 will be sent to 0 out of 0 subscribers
+2025-11-11 13:11:23,853 - notification_service - INFO - publish:261 - No eligible subscribers for event 61ccd9b4-6f49-4139-bc2f-b9b3444db7f1
+2025-11-11 13:11:57,576 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:12:08,335 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 65259
+2025-11-11 13:12:08,336 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 93913732-d3d5-4c3d-9ca2-516656926486 - Type: system_notification - Conversation: None
+2025-11-11 13:12:08,336 - notification_service - INFO - publish:229 - Publishing event 93913732-d3d5-4c3d-9ca2-516656926486 of type system_notification for conversation None
+2025-11-11 13:12:08,337 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 93913732-d3d5-4c3d-9ca2-516656926486
+2025-11-11 13:12:08,337 - notification_service - INFO - publish:246 - Event 93913732-d3d5-4c3d-9ca2-516656926486 will be sent to 0 out of 0 subscribers
+2025-11-11 13:12:08,338 - notification_service - INFO - publish:261 - No eligible subscribers for event 93913732-d3d5-4c3d-9ca2-516656926486
+2025-11-11 13:30:20,256 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:30:30,190 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 64431
+2025-11-11 13:30:30,191 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: ab6fb67c-367e-40a6-be3f-1c9f7d93631c - Type: system_notification - Conversation: None
+2025-11-11 13:30:30,191 - notification_service - INFO - publish:229 - Publishing event ab6fb67c-367e-40a6-be3f-1c9f7d93631c of type system_notification for conversation None
+2025-11-11 13:30:30,192 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event ab6fb67c-367e-40a6-be3f-1c9f7d93631c
+2025-11-11 13:30:30,193 - notification_service - INFO - publish:246 - Event ab6fb67c-367e-40a6-be3f-1c9f7d93631c will be sent to 0 out of 0 subscribers
+2025-11-11 13:30:30,193 - notification_service - INFO - publish:261 - No eligible subscribers for event ab6fb67c-367e-40a6-be3f-1c9f7d93631c
+2025-11-11 13:31:25,617 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:31:35,144 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60073
+2025-11-11 13:31:35,145 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 2949df2d-425a-4965-aed9-1d8ec890123a - Type: system_notification - Conversation: None
+2025-11-11 13:31:35,145 - notification_service - INFO - publish:229 - Publishing event 2949df2d-425a-4965-aed9-1d8ec890123a of type system_notification for conversation None
+2025-11-11 13:31:35,145 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 2949df2d-425a-4965-aed9-1d8ec890123a
+2025-11-11 13:31:35,145 - notification_service - INFO - publish:246 - Event 2949df2d-425a-4965-aed9-1d8ec890123a will be sent to 0 out of 0 subscribers
+2025-11-11 13:31:35,147 - notification_service - INFO - publish:261 - No eligible subscribers for event 2949df2d-425a-4965-aed9-1d8ec890123a
+2025-11-11 13:32:49,152 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:33:04,459 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:33:42,854 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:33:52,674 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60447
+2025-11-11 13:33:52,675 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: bafcce74-044d-4264-a7a5-cffe627ad4a6 - Type: system_notification - Conversation: None
+2025-11-11 13:33:52,675 - notification_service - INFO - publish:229 - Publishing event bafcce74-044d-4264-a7a5-cffe627ad4a6 of type system_notification for conversation None
+2025-11-11 13:33:52,675 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event bafcce74-044d-4264-a7a5-cffe627ad4a6
+2025-11-11 13:33:52,675 - notification_service - INFO - publish:246 - Event bafcce74-044d-4264-a7a5-cffe627ad4a6 will be sent to 0 out of 0 subscribers
+2025-11-11 13:33:52,676 - notification_service - INFO - publish:261 - No eligible subscribers for event bafcce74-044d-4264-a7a5-cffe627ad4a6
+2025-11-11 13:35:42,967 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:36:16,063 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:36:25,951 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 62518
+2025-11-11 13:36:25,952 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: b600a06e-d651-4f75-a0a4-de245ff5614b - Type: system_notification - Conversation: None
+2025-11-11 13:36:25,952 - notification_service - INFO - publish:229 - Publishing event b600a06e-d651-4f75-a0a4-de245ff5614b of type system_notification for conversation None
+2025-11-11 13:36:25,953 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event b600a06e-d651-4f75-a0a4-de245ff5614b
+2025-11-11 13:36:25,953 - notification_service - INFO - publish:246 - Event b600a06e-d651-4f75-a0a4-de245ff5614b will be sent to 0 out of 0 subscribers
+2025-11-11 13:36:25,954 - notification_service - INFO - publish:261 - No eligible subscribers for event b600a06e-d651-4f75-a0a4-de245ff5614b
+2025-11-11 13:37:27,152 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:40:21,393 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:40:30,958 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 58288
+2025-11-11 13:40:30,958 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: ebfd371a-10c0-48bb-a990-5f87f4b0bd2e - Type: system_notification - Conversation: None
+2025-11-11 13:40:30,958 - notification_service - INFO - publish:229 - Publishing event ebfd371a-10c0-48bb-a990-5f87f4b0bd2e of type system_notification for conversation None
+2025-11-11 13:40:30,958 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event ebfd371a-10c0-48bb-a990-5f87f4b0bd2e
+2025-11-11 13:40:30,958 - notification_service - INFO - publish:246 - Event ebfd371a-10c0-48bb-a990-5f87f4b0bd2e will be sent to 0 out of 0 subscribers
+2025-11-11 13:40:30,958 - notification_service - INFO - publish:261 - No eligible subscribers for event ebfd371a-10c0-48bb-a990-5f87f4b0bd2e
+2025-11-11 13:57:30,313 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 13:57:40,166 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 52961
+2025-11-11 13:57:40,167 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: a4fccb75-b3ad-4f78-96bb-670f066912f6 - Type: system_notification - Conversation: None
+2025-11-11 13:57:40,167 - notification_service - INFO - publish:229 - Publishing event a4fccb75-b3ad-4f78-96bb-670f066912f6 of type system_notification for conversation None
+2025-11-11 13:57:40,168 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event a4fccb75-b3ad-4f78-96bb-670f066912f6
+2025-11-11 13:57:40,168 - notification_service - INFO - publish:246 - Event a4fccb75-b3ad-4f78-96bb-670f066912f6 will be sent to 0 out of 0 subscribers
+2025-11-11 13:57:40,169 - notification_service - INFO - publish:261 - No eligible subscribers for event a4fccb75-b3ad-4f78-96bb-670f066912f6
+2025-11-11 13:58:23,584 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:02:17,346 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:02:27,333 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 61251
+2025-11-11 14:02:27,335 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 44666b3f-3f25-466d-a833-7c26e6caefd1 - Type: system_notification - Conversation: None
+2025-11-11 14:02:27,335 - notification_service - INFO - publish:229 - Publishing event 44666b3f-3f25-466d-a833-7c26e6caefd1 of type system_notification for conversation None
+2025-11-11 14:02:27,335 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 44666b3f-3f25-466d-a833-7c26e6caefd1
+2025-11-11 14:02:27,335 - notification_service - INFO - publish:246 - Event 44666b3f-3f25-466d-a833-7c26e6caefd1 will be sent to 0 out of 0 subscribers
+2025-11-11 14:02:27,336 - notification_service - INFO - publish:261 - No eligible subscribers for event 44666b3f-3f25-466d-a833-7c26e6caefd1
+2025-11-11 14:07:16,437 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:07:26,560 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 62265
+2025-11-11 14:07:26,560 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: b3b19168-ff57-4de7-969d-951f45aa58ce - Type: system_notification - Conversation: None
+2025-11-11 14:07:26,560 - notification_service - INFO - publish:229 - Publishing event b3b19168-ff57-4de7-969d-951f45aa58ce of type system_notification for conversation None
+2025-11-11 14:07:26,560 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event b3b19168-ff57-4de7-969d-951f45aa58ce
+2025-11-11 14:07:26,561 - notification_service - INFO - publish:246 - Event b3b19168-ff57-4de7-969d-951f45aa58ce will be sent to 0 out of 0 subscribers
+2025-11-11 14:07:26,561 - notification_service - INFO - publish:261 - No eligible subscribers for event b3b19168-ff57-4de7-969d-951f45aa58ce
+2025-11-11 14:07:47,878 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:08:12,825 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:08:22,784 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 59873
+2025-11-11 14:08:22,785 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 1a1fb190-7aa6-4f3f-8804-ec135d89b989 - Type: system_notification - Conversation: None
+2025-11-11 14:08:22,785 - notification_service - INFO - publish:229 - Publishing event 1a1fb190-7aa6-4f3f-8804-ec135d89b989 of type system_notification for conversation None
+2025-11-11 14:08:22,786 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 1a1fb190-7aa6-4f3f-8804-ec135d89b989
+2025-11-11 14:08:22,786 - notification_service - INFO - publish:246 - Event 1a1fb190-7aa6-4f3f-8804-ec135d89b989 will be sent to 0 out of 0 subscribers
+2025-11-11 14:08:22,787 - notification_service - INFO - publish:261 - No eligible subscribers for event 1a1fb190-7aa6-4f3f-8804-ec135d89b989
+2025-11-11 14:09:11,496 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:09:21,351 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60034
+2025-11-11 14:09:21,351 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 4e0fc6e9-1f81-4495-bc11-5f20c3bfc9c2 - Type: system_notification - Conversation: None
+2025-11-11 14:09:21,351 - notification_service - INFO - publish:229 - Publishing event 4e0fc6e9-1f81-4495-bc11-5f20c3bfc9c2 of type system_notification for conversation None
+2025-11-11 14:09:21,351 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 4e0fc6e9-1f81-4495-bc11-5f20c3bfc9c2
+2025-11-11 14:09:21,351 - notification_service - INFO - publish:246 - Event 4e0fc6e9-1f81-4495-bc11-5f20c3bfc9c2 will be sent to 0 out of 0 subscribers
+2025-11-11 14:09:21,353 - notification_service - INFO - publish:261 - No eligible subscribers for event 4e0fc6e9-1f81-4495-bc11-5f20c3bfc9c2
+2025-11-11 14:09:37,501 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:09:47,401 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60123
+2025-11-11 14:09:47,403 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 948de9e0-b046-4444-b0b3-24a5d988676b - Type: system_notification - Conversation: None
+2025-11-11 14:09:47,403 - notification_service - INFO - publish:229 - Publishing event 948de9e0-b046-4444-b0b3-24a5d988676b of type system_notification for conversation None
+2025-11-11 14:09:47,404 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 948de9e0-b046-4444-b0b3-24a5d988676b
+2025-11-11 14:09:47,404 - notification_service - INFO - publish:246 - Event 948de9e0-b046-4444-b0b3-24a5d988676b will be sent to 0 out of 0 subscribers
+2025-11-11 14:09:47,404 - notification_service - INFO - publish:261 - No eligible subscribers for event 948de9e0-b046-4444-b0b3-24a5d988676b
+2025-11-11 14:09:55,864 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:10:05,601 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60197
+2025-11-11 14:10:05,602 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 7c2f3042-7ab0-463f-8348-b4d933ec1353 - Type: system_notification - Conversation: None
+2025-11-11 14:10:05,602 - notification_service - INFO - publish:229 - Publishing event 7c2f3042-7ab0-463f-8348-b4d933ec1353 of type system_notification for conversation None
+2025-11-11 14:10:05,603 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 7c2f3042-7ab0-463f-8348-b4d933ec1353
+2025-11-11 14:10:05,603 - notification_service - INFO - publish:246 - Event 7c2f3042-7ab0-463f-8348-b4d933ec1353 will be sent to 0 out of 0 subscribers
+2025-11-11 14:10:05,603 - notification_service - INFO - publish:261 - No eligible subscribers for event 7c2f3042-7ab0-463f-8348-b4d933ec1353
+2025-11-11 14:11:57,825 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:12:08,193 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 50602
+2025-11-11 14:12:08,193 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: c1b5b875-8691-4585-b407-91c14d4c4d20 - Type: system_notification - Conversation: None
+2025-11-11 14:12:08,194 - notification_service - INFO - publish:229 - Publishing event c1b5b875-8691-4585-b407-91c14d4c4d20 of type system_notification for conversation None
+2025-11-11 14:12:08,194 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event c1b5b875-8691-4585-b407-91c14d4c4d20
+2025-11-11 14:12:08,194 - notification_service - INFO - publish:246 - Event c1b5b875-8691-4585-b407-91c14d4c4d20 will be sent to 0 out of 0 subscribers
+2025-11-11 14:12:08,194 - notification_service - INFO - publish:261 - No eligible subscribers for event c1b5b875-8691-4585-b407-91c14d4c4d20
+2025-11-11 14:12:55,650 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:13:05,505 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 60351
+2025-11-11 14:13:05,506 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 1c6fe3b7-ea04-450a-b2bb-7d2d670af42d - Type: system_notification - Conversation: None
+2025-11-11 14:13:05,507 - notification_service - INFO - publish:229 - Publishing event 1c6fe3b7-ea04-450a-b2bb-7d2d670af42d of type system_notification for conversation None
+2025-11-11 14:13:05,507 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 1c6fe3b7-ea04-450a-b2bb-7d2d670af42d
+2025-11-11 14:13:05,507 - notification_service - INFO - publish:246 - Event 1c6fe3b7-ea04-450a-b2bb-7d2d670af42d will be sent to 0 out of 0 subscribers
+2025-11-11 14:13:05,507 - notification_service - INFO - publish:261 - No eligible subscribers for event 1c6fe3b7-ea04-450a-b2bb-7d2d670af42d
+2025-11-11 14:15:22,688 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:15:32,855 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 50372
+2025-11-11 14:15:32,856 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 908d4acd-1ded-45c3-9326-e906092b660e - Type: system_notification - Conversation: None
+2025-11-11 14:15:32,856 - notification_service - INFO - publish:229 - Publishing event 908d4acd-1ded-45c3-9326-e906092b660e of type system_notification for conversation None
+2025-11-11 14:15:32,856 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 908d4acd-1ded-45c3-9326-e906092b660e
+2025-11-11 14:15:32,856 - notification_service - INFO - publish:246 - Event 908d4acd-1ded-45c3-9326-e906092b660e will be sent to 0 out of 0 subscribers
+2025-11-11 14:15:32,856 - notification_service - INFO - publish:261 - No eligible subscribers for event 908d4acd-1ded-45c3-9326-e906092b660e
+2025-11-11 14:16:51,555 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:17:02,090 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 50905
+2025-11-11 14:17:02,090 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: bd134f93-ed08-461c-a53e-3d74b2f84439 - Type: system_notification - Conversation: None
+2025-11-11 14:17:02,090 - notification_service - INFO - publish:229 - Publishing event bd134f93-ed08-461c-a53e-3d74b2f84439 of type system_notification for conversation None
+2025-11-11 14:17:02,090 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event bd134f93-ed08-461c-a53e-3d74b2f84439
+2025-11-11 14:17:02,092 - notification_service - INFO - publish:246 - Event bd134f93-ed08-461c-a53e-3d74b2f84439 will be sent to 0 out of 0 subscribers
+2025-11-11 14:17:02,092 - notification_service - INFO - publish:261 - No eligible subscribers for event bd134f93-ed08-461c-a53e-3d74b2f84439
+2025-11-11 14:18:43,974 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:18:53,920 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 54647
+2025-11-11 14:18:53,920 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 1b7daeaa-ba7b-41dd-9bfd-ab9e63d25948 - Type: system_notification - Conversation: None
+2025-11-11 14:18:53,920 - notification_service - INFO - publish:229 - Publishing event 1b7daeaa-ba7b-41dd-9bfd-ab9e63d25948 of type system_notification for conversation None
+2025-11-11 14:18:53,922 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 1b7daeaa-ba7b-41dd-9bfd-ab9e63d25948
+2025-11-11 14:18:53,922 - notification_service - INFO - publish:246 - Event 1b7daeaa-ba7b-41dd-9bfd-ab9e63d25948 will be sent to 0 out of 0 subscribers
+2025-11-11 14:18:53,922 - notification_service - INFO - publish:261 - No eligible subscribers for event 1b7daeaa-ba7b-41dd-9bfd-ab9e63d25948
+2025-11-11 14:20:42,539 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:20:52,443 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 54949
+2025-11-11 14:20:52,445 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 24e444a0-7ce0-4fa8-a4bb-fc1a49408e36 - Type: system_notification - Conversation: None
+2025-11-11 14:20:52,447 - notification_service - INFO - publish:229 - Publishing event 24e444a0-7ce0-4fa8-a4bb-fc1a49408e36 of type system_notification for conversation None
+2025-11-11 14:20:52,448 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 24e444a0-7ce0-4fa8-a4bb-fc1a49408e36
+2025-11-11 14:20:52,448 - notification_service - INFO - publish:246 - Event 24e444a0-7ce0-4fa8-a4bb-fc1a49408e36 will be sent to 0 out of 0 subscribers
+2025-11-11 14:20:52,451 - notification_service - INFO - publish:261 - No eligible subscribers for event 24e444a0-7ce0-4fa8-a4bb-fc1a49408e36
+2025-11-11 14:22:00,947 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:22:10,682 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 62778
+2025-11-11 14:22:10,683 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 7f059a04-77ca-468b-85a9-db5416a479f3 - Type: system_notification - Conversation: None
+2025-11-11 14:22:10,683 - notification_service - INFO - publish:229 - Publishing event 7f059a04-77ca-468b-85a9-db5416a479f3 of type system_notification for conversation None
+2025-11-11 14:22:10,683 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 7f059a04-77ca-468b-85a9-db5416a479f3
+2025-11-11 14:22:10,683 - notification_service - INFO - publish:246 - Event 7f059a04-77ca-468b-85a9-db5416a479f3 will be sent to 0 out of 0 subscribers
+2025-11-11 14:22:10,683 - notification_service - INFO - publish:261 - No eligible subscribers for event 7f059a04-77ca-468b-85a9-db5416a479f3
+2025-11-11 14:24:16,279 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:26:02,005 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:26:11,966 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 58642
+2025-11-11 14:26:11,967 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: b3e7bf83-c1ef-4fd1-ae80-e338823337b9 - Type: system_notification - Conversation: None
+2025-11-11 14:26:11,967 - notification_service - INFO - publish:229 - Publishing event b3e7bf83-c1ef-4fd1-ae80-e338823337b9 of type system_notification for conversation None
+2025-11-11 14:26:11,967 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event b3e7bf83-c1ef-4fd1-ae80-e338823337b9
+2025-11-11 14:26:11,967 - notification_service - INFO - publish:246 - Event b3e7bf83-c1ef-4fd1-ae80-e338823337b9 will be sent to 0 out of 0 subscribers
+2025-11-11 14:26:11,967 - notification_service - INFO - publish:261 - No eligible subscribers for event b3e7bf83-c1ef-4fd1-ae80-e338823337b9
+2025-11-11 14:33:13,246 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:33:23,650 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 53163
+2025-11-11 14:33:23,651 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 15103461-9fa0-456f-aeff-39b36190a630 - Type: system_notification - Conversation: None
+2025-11-11 14:33:23,651 - notification_service - INFO - publish:229 - Publishing event 15103461-9fa0-456f-aeff-39b36190a630 of type system_notification for conversation None
+2025-11-11 14:33:23,651 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 15103461-9fa0-456f-aeff-39b36190a630
+2025-11-11 14:33:23,651 - notification_service - INFO - publish:246 - Event 15103461-9fa0-456f-aeff-39b36190a630 will be sent to 0 out of 0 subscribers
+2025-11-11 14:33:23,653 - notification_service - INFO - publish:261 - No eligible subscribers for event 15103461-9fa0-456f-aeff-39b36190a630
+2025-11-11 14:33:57,621 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:34:07,667 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 53299
+2025-11-11 14:34:07,669 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: e85d562e-af28-41fd-94df-42e14f247e75 - Type: system_notification - Conversation: None
+2025-11-11 14:34:07,669 - notification_service - INFO - publish:229 - Publishing event e85d562e-af28-41fd-94df-42e14f247e75 of type system_notification for conversation None
+2025-11-11 14:34:07,669 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event e85d562e-af28-41fd-94df-42e14f247e75
+2025-11-11 14:34:07,669 - notification_service - INFO - publish:246 - Event e85d562e-af28-41fd-94df-42e14f247e75 will be sent to 0 out of 0 subscribers
+2025-11-11 14:34:07,670 - notification_service - INFO - publish:261 - No eligible subscribers for event e85d562e-af28-41fd-94df-42e14f247e75
+2025-11-11 14:34:22,605 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:34:32,997 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 53385
+2025-11-11 14:34:32,997 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: b91bf2bd-7700-46e0-848a-e70cbaa03532 - Type: system_notification - Conversation: None
+2025-11-11 14:34:32,999 - notification_service - INFO - publish:229 - Publishing event b91bf2bd-7700-46e0-848a-e70cbaa03532 of type system_notification for conversation None
+2025-11-11 14:34:32,999 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event b91bf2bd-7700-46e0-848a-e70cbaa03532
+2025-11-11 14:34:33,000 - notification_service - INFO - publish:246 - Event b91bf2bd-7700-46e0-848a-e70cbaa03532 will be sent to 0 out of 0 subscribers
+2025-11-11 14:34:33,000 - notification_service - INFO - publish:261 - No eligible subscribers for event b91bf2bd-7700-46e0-848a-e70cbaa03532
+2025-11-11 14:35:35,204 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:36:23,565 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:37:04,487 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:37:14,554 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 65422
+2025-11-11 14:37:14,554 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 45a4e00c-1c5d-4c0f-81d2-065c28414858 - Type: system_notification - Conversation: None
+2025-11-11 14:37:14,555 - notification_service - INFO - publish:229 - Publishing event 45a4e00c-1c5d-4c0f-81d2-065c28414858 of type system_notification for conversation None
+2025-11-11 14:37:14,555 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 45a4e00c-1c5d-4c0f-81d2-065c28414858
+2025-11-11 14:37:14,555 - notification_service - INFO - publish:246 - Event 45a4e00c-1c5d-4c0f-81d2-065c28414858 will be sent to 0 out of 0 subscribers
+2025-11-11 14:37:14,556 - notification_service - INFO - publish:261 - No eligible subscribers for event 45a4e00c-1c5d-4c0f-81d2-065c28414858
+2025-11-11 14:38:14,682 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:38:25,805 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 49217
+2025-11-11 14:38:25,805 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: fe3da88c-b72a-41c2-aa74-8643f34b1202 - Type: system_notification - Conversation: None
+2025-11-11 14:38:25,807 - notification_service - INFO - publish:229 - Publishing event fe3da88c-b72a-41c2-aa74-8643f34b1202 of type system_notification for conversation None
+2025-11-11 14:38:25,807 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event fe3da88c-b72a-41c2-aa74-8643f34b1202
+2025-11-11 14:38:25,808 - notification_service - INFO - publish:246 - Event fe3da88c-b72a-41c2-aa74-8643f34b1202 will be sent to 0 out of 0 subscribers
+2025-11-11 14:38:25,808 - notification_service - INFO - publish:261 - No eligible subscribers for event fe3da88c-b72a-41c2-aa74-8643f34b1202
+2025-11-11 14:42:01,223 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:42:11,476 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 64810
+2025-11-11 14:42:11,476 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 63c769f5-d131-4b75-870f-c1fd2f0b4e00 - Type: system_notification - Conversation: None
+2025-11-11 14:42:11,477 - notification_service - INFO - publish:229 - Publishing event 63c769f5-d131-4b75-870f-c1fd2f0b4e00 of type system_notification for conversation None
+2025-11-11 14:42:11,477 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 63c769f5-d131-4b75-870f-c1fd2f0b4e00
+2025-11-11 14:42:11,477 - notification_service - INFO - publish:246 - Event 63c769f5-d131-4b75-870f-c1fd2f0b4e00 will be sent to 0 out of 0 subscribers
+2025-11-11 14:42:11,477 - notification_service - INFO - publish:261 - No eligible subscribers for event 63c769f5-d131-4b75-870f-c1fd2f0b4e00
+2025-11-11 14:43:15,345 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:43:26,830 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 51998
+2025-11-11 14:43:26,830 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 96b7a6f2-fd43-47e4-a2e4-81804e372e3c - Type: system_notification - Conversation: None
+2025-11-11 14:43:26,831 - notification_service - INFO - publish:229 - Publishing event 96b7a6f2-fd43-47e4-a2e4-81804e372e3c of type system_notification for conversation None
+2025-11-11 14:43:26,831 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 96b7a6f2-fd43-47e4-a2e4-81804e372e3c
+2025-11-11 14:43:26,831 - notification_service - INFO - publish:246 - Event 96b7a6f2-fd43-47e4-a2e4-81804e372e3c will be sent to 0 out of 0 subscribers
+2025-11-11 14:43:26,832 - notification_service - INFO - publish:261 - No eligible subscribers for event 96b7a6f2-fd43-47e4-a2e4-81804e372e3c
+2025-11-11 14:53:21,564 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:53:32,123 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 56686
+2025-11-11 14:53:32,123 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 106052a7-a007-4765-88c3-b2e8c60e5003 - Type: system_notification - Conversation: None
+2025-11-11 14:53:32,123 - notification_service - INFO - publish:229 - Publishing event 106052a7-a007-4765-88c3-b2e8c60e5003 of type system_notification for conversation None
+2025-11-11 14:53:32,124 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 106052a7-a007-4765-88c3-b2e8c60e5003
+2025-11-11 14:53:32,124 - notification_service - INFO - publish:246 - Event 106052a7-a007-4765-88c3-b2e8c60e5003 will be sent to 0 out of 0 subscribers
+2025-11-11 14:53:32,124 - notification_service - INFO - publish:261 - No eligible subscribers for event 106052a7-a007-4765-88c3-b2e8c60e5003
+2025-11-11 14:57:49,362 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:59:08,688 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 14:59:18,625 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 52350
+2025-11-11 14:59:18,625 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 73f2ad46-2c47-40e4-b9bb-8d158f9692e5 - Type: system_notification - Conversation: None
+2025-11-11 14:59:18,626 - notification_service - INFO - publish:229 - Publishing event 73f2ad46-2c47-40e4-b9bb-8d158f9692e5 of type system_notification for conversation None
+2025-11-11 14:59:18,626 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 73f2ad46-2c47-40e4-b9bb-8d158f9692e5
+2025-11-11 14:59:18,626 - notification_service - INFO - publish:246 - Event 73f2ad46-2c47-40e4-b9bb-8d158f9692e5 will be sent to 0 out of 0 subscribers
+2025-11-11 14:59:18,627 - notification_service - INFO - publish:261 - No eligible subscribers for event 73f2ad46-2c47-40e4-b9bb-8d158f9692e5
+2025-11-11 15:46:33,303 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:46:44,020 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 63396
+2025-11-11 15:46:44,020 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: fff5795f-1aff-469f-ab23-1e99d4b31213 - Type: system_notification - Conversation: None
+2025-11-11 15:46:44,020 - notification_service - INFO - publish:229 - Publishing event fff5795f-1aff-469f-ab23-1e99d4b31213 of type system_notification for conversation None
+2025-11-11 15:46:44,022 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event fff5795f-1aff-469f-ab23-1e99d4b31213
+2025-11-11 15:46:44,022 - notification_service - INFO - publish:246 - Event fff5795f-1aff-469f-ab23-1e99d4b31213 will be sent to 0 out of 0 subscribers
+2025-11-11 15:46:44,022 - notification_service - INFO - publish:261 - No eligible subscribers for event fff5795f-1aff-469f-ab23-1e99d4b31213
+2025-11-11 15:49:54,317 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:50:04,719 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 58254
+2025-11-11 15:50:04,720 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 1a564625-c52b-4b71-82cc-6f781d867f33 - Type: system_notification - Conversation: None
+2025-11-11 15:50:04,720 - notification_service - INFO - publish:229 - Publishing event 1a564625-c52b-4b71-82cc-6f781d867f33 of type system_notification for conversation None
+2025-11-11 15:50:04,720 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 1a564625-c52b-4b71-82cc-6f781d867f33
+2025-11-11 15:50:04,720 - notification_service - INFO - publish:246 - Event 1a564625-c52b-4b71-82cc-6f781d867f33 will be sent to 0 out of 0 subscribers
+2025-11-11 15:50:04,720 - notification_service - INFO - publish:261 - No eligible subscribers for event 1a564625-c52b-4b71-82cc-6f781d867f33
+2025-11-11 15:55:30,799 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:55:41,147 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 53994
+2025-11-11 15:55:41,147 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 506b9ac3-dd93-4386-91b0-7d160640f7db - Type: system_notification - Conversation: None
+2025-11-11 15:55:41,147 - notification_service - INFO - publish:229 - Publishing event 506b9ac3-dd93-4386-91b0-7d160640f7db of type system_notification for conversation None
+2025-11-11 15:55:41,148 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 506b9ac3-dd93-4386-91b0-7d160640f7db
+2025-11-11 15:55:41,148 - notification_service - INFO - publish:246 - Event 506b9ac3-dd93-4386-91b0-7d160640f7db will be sent to 0 out of 0 subscribers
+2025-11-11 15:55:41,149 - notification_service - INFO - publish:261 - No eligible subscribers for event 506b9ac3-dd93-4386-91b0-7d160640f7db
+2025-11-11 15:56:23,195 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:56:33,572 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 65060
+2025-11-11 15:56:33,572 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 59563f51-6834-449e-812e-0d60013c1969 - Type: system_notification - Conversation: None
+2025-11-11 15:56:33,574 - notification_service - INFO - publish:229 - Publishing event 59563f51-6834-449e-812e-0d60013c1969 of type system_notification for conversation None
+2025-11-11 15:56:33,575 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 59563f51-6834-449e-812e-0d60013c1969
+2025-11-11 15:56:33,575 - notification_service - INFO - publish:246 - Event 59563f51-6834-449e-812e-0d60013c1969 will be sent to 0 out of 0 subscribers
+2025-11-11 15:56:33,575 - notification_service - INFO - publish:261 - No eligible subscribers for event 59563f51-6834-449e-812e-0d60013c1969
+2025-11-11 15:57:02,205 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:57:12,478 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 56773
+2025-11-11 15:57:12,478 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 6e9821af-8dcb-499e-b98a-5713fe56becc - Type: system_notification - Conversation: None
+2025-11-11 15:57:12,479 - notification_service - INFO - publish:229 - Publishing event 6e9821af-8dcb-499e-b98a-5713fe56becc of type system_notification for conversation None
+2025-11-11 15:57:12,479 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 6e9821af-8dcb-499e-b98a-5713fe56becc
+2025-11-11 15:57:12,479 - notification_service - INFO - publish:246 - Event 6e9821af-8dcb-499e-b98a-5713fe56becc will be sent to 0 out of 0 subscribers
+2025-11-11 15:57:12,480 - notification_service - INFO - publish:261 - No eligible subscribers for event 6e9821af-8dcb-499e-b98a-5713fe56becc
+2025-11-11 15:57:22,140 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:57:44,229 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:57:53,885 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 56939
+2025-11-11 15:57:53,885 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 5a534619-d640-48c1-aba2-d8bde07fb544 - Type: system_notification - Conversation: None
+2025-11-11 15:57:53,886 - notification_service - INFO - publish:229 - Publishing event 5a534619-d640-48c1-aba2-d8bde07fb544 of type system_notification for conversation None
+2025-11-11 15:57:53,887 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 5a534619-d640-48c1-aba2-d8bde07fb544
+2025-11-11 15:57:53,887 - notification_service - INFO - publish:246 - Event 5a534619-d640-48c1-aba2-d8bde07fb544 will be sent to 0 out of 0 subscribers
+2025-11-11 15:57:53,887 - notification_service - INFO - publish:261 - No eligible subscribers for event 5a534619-d640-48c1-aba2-d8bde07fb544
+2025-11-11 15:58:34,474 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 15:59:03,211 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:02:38,672 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:02:54,382 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:03:04,435 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 55732
+2025-11-11 16:03:04,437 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 7af969c1-218a-4503-9f53-0ce201e6e16a - Type: system_notification - Conversation: None
+2025-11-11 16:03:04,437 - notification_service - INFO - publish:229 - Publishing event 7af969c1-218a-4503-9f53-0ce201e6e16a of type system_notification for conversation None
+2025-11-11 16:03:04,438 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 7af969c1-218a-4503-9f53-0ce201e6e16a
+2025-11-11 16:03:04,438 - notification_service - INFO - publish:246 - Event 7af969c1-218a-4503-9f53-0ce201e6e16a will be sent to 0 out of 0 subscribers
+2025-11-11 16:03:04,438 - notification_service - INFO - publish:261 - No eligible subscribers for event 7af969c1-218a-4503-9f53-0ce201e6e16a
+2025-11-11 16:03:43,539 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:03:53,670 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 55870
+2025-11-11 16:03:53,671 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 574c4ff1-6e04-434f-82d2-1c723ddc472e - Type: system_notification - Conversation: None
+2025-11-11 16:03:53,671 - notification_service - INFO - publish:229 - Publishing event 574c4ff1-6e04-434f-82d2-1c723ddc472e of type system_notification for conversation None
+2025-11-11 16:03:53,672 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 574c4ff1-6e04-434f-82d2-1c723ddc472e
+2025-11-11 16:03:53,672 - notification_service - INFO - publish:246 - Event 574c4ff1-6e04-434f-82d2-1c723ddc472e will be sent to 0 out of 0 subscribers
+2025-11-11 16:03:53,672 - notification_service - INFO - publish:261 - No eligible subscribers for event 574c4ff1-6e04-434f-82d2-1c723ddc472e
+2025-11-11 16:04:43,263 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:04:53,605 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 58297
+2025-11-11 16:04:53,606 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 791c5e85-197e-4cc4-94d4-279e35b1ae17 - Type: system_notification - Conversation: None
+2025-11-11 16:04:53,606 - notification_service - INFO - publish:229 - Publishing event 791c5e85-197e-4cc4-94d4-279e35b1ae17 of type system_notification for conversation None
+2025-11-11 16:04:53,607 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 791c5e85-197e-4cc4-94d4-279e35b1ae17
+2025-11-11 16:04:53,607 - notification_service - INFO - publish:246 - Event 791c5e85-197e-4cc4-94d4-279e35b1ae17 will be sent to 0 out of 0 subscribers
+2025-11-11 16:04:53,608 - notification_service - INFO - publish:261 - No eligible subscribers for event 791c5e85-197e-4cc4-94d4-279e35b1ae17
+2025-11-11 16:05:48,497 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:05:58,448 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 63772
+2025-11-11 16:05:58,449 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: f451c97c-afcd-49a0-8cf5-13df1600cabd - Type: system_notification - Conversation: None
+2025-11-11 16:05:58,449 - notification_service - INFO - publish:229 - Publishing event f451c97c-afcd-49a0-8cf5-13df1600cabd of type system_notification for conversation None
+2025-11-11 16:05:58,450 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event f451c97c-afcd-49a0-8cf5-13df1600cabd
+2025-11-11 16:05:58,450 - notification_service - INFO - publish:246 - Event f451c97c-afcd-49a0-8cf5-13df1600cabd will be sent to 0 out of 0 subscribers
+2025-11-11 16:05:58,450 - notification_service - INFO - publish:261 - No eligible subscribers for event f451c97c-afcd-49a0-8cf5-13df1600cabd
+2025-11-11 16:06:30,320 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:06:40,698 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 51189
+2025-11-11 16:06:40,698 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 3360cac0-74d2-4c33-8ebd-48f034887a42 - Type: system_notification - Conversation: None
+2025-11-11 16:06:40,700 - notification_service - INFO - publish:229 - Publishing event 3360cac0-74d2-4c33-8ebd-48f034887a42 of type system_notification for conversation None
+2025-11-11 16:06:40,700 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 3360cac0-74d2-4c33-8ebd-48f034887a42
+2025-11-11 16:06:40,700 - notification_service - INFO - publish:246 - Event 3360cac0-74d2-4c33-8ebd-48f034887a42 will be sent to 0 out of 0 subscribers
+2025-11-11 16:06:40,700 - notification_service - INFO - publish:261 - No eligible subscribers for event 3360cac0-74d2-4c33-8ebd-48f034887a42
+2025-11-11 16:08:30,696 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:09:04,150 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:09:14,266 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 59862
+2025-11-11 16:09:14,267 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 4a0ebec2-d3e0-4190-be12-74f6c900358f - Type: system_notification - Conversation: None
+2025-11-11 16:09:14,267 - notification_service - INFO - publish:229 - Publishing event 4a0ebec2-d3e0-4190-be12-74f6c900358f of type system_notification for conversation None
+2025-11-11 16:09:14,267 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 4a0ebec2-d3e0-4190-be12-74f6c900358f
+2025-11-11 16:09:14,268 - notification_service - INFO - publish:246 - Event 4a0ebec2-d3e0-4190-be12-74f6c900358f will be sent to 0 out of 0 subscribers
+2025-11-11 16:09:14,268 - notification_service - INFO - publish:261 - No eligible subscribers for event 4a0ebec2-d3e0-4190-be12-74f6c900358f
+2025-11-11 16:28:13,620 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:28:23,475 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 61649
+2025-11-11 16:28:23,476 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: b4e18dac-457d-4748-8951-b85ef237d184 - Type: system_notification - Conversation: None
+2025-11-11 16:28:23,476 - notification_service - INFO - publish:229 - Publishing event b4e18dac-457d-4748-8951-b85ef237d184 of type system_notification for conversation None
+2025-11-11 16:28:23,477 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event b4e18dac-457d-4748-8951-b85ef237d184
+2025-11-11 16:28:23,477 - notification_service - INFO - publish:246 - Event b4e18dac-457d-4748-8951-b85ef237d184 will be sent to 0 out of 0 subscribers
+2025-11-11 16:28:23,477 - notification_service - INFO - publish:261 - No eligible subscribers for event b4e18dac-457d-4748-8951-b85ef237d184
+2025-11-11 16:28:44,433 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:28:54,346 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 61745
+2025-11-11 16:28:54,346 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: c2c67a4e-b102-43da-b662-304c1f225f8f - Type: system_notification - Conversation: None
+2025-11-11 16:28:54,346 - notification_service - INFO - publish:229 - Publishing event c2c67a4e-b102-43da-b662-304c1f225f8f of type system_notification for conversation None
+2025-11-11 16:28:54,346 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event c2c67a4e-b102-43da-b662-304c1f225f8f
+2025-11-11 16:28:54,348 - notification_service - INFO - publish:246 - Event c2c67a4e-b102-43da-b662-304c1f225f8f will be sent to 0 out of 0 subscribers
+2025-11-11 16:28:54,349 - notification_service - INFO - publish:261 - No eligible subscribers for event c2c67a4e-b102-43da-b662-304c1f225f8f
+2025-11-11 16:29:09,249 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:29:18,518 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 61836
+2025-11-11 16:29:18,519 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: d25745b0-45f5-4442-8115-a9df42b28ecd - Type: system_notification - Conversation: None
+2025-11-11 16:29:18,519 - notification_service - INFO - publish:229 - Publishing event d25745b0-45f5-4442-8115-a9df42b28ecd of type system_notification for conversation None
+2025-11-11 16:29:18,520 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event d25745b0-45f5-4442-8115-a9df42b28ecd
+2025-11-11 16:29:18,520 - notification_service - INFO - publish:246 - Event d25745b0-45f5-4442-8115-a9df42b28ecd will be sent to 0 out of 0 subscribers
+2025-11-11 16:29:18,521 - notification_service - INFO - publish:261 - No eligible subscribers for event d25745b0-45f5-4442-8115-a9df42b28ecd
+2025-11-11 16:30:23,820 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:30:33,602 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 56314
+2025-11-11 16:30:33,603 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: 4ac7212f-79fc-46c6-859f-67d7568f1630 - Type: system_notification - Conversation: None
+2025-11-11 16:30:33,603 - notification_service - INFO - publish:229 - Publishing event 4ac7212f-79fc-46c6-859f-67d7568f1630 of type system_notification for conversation None
+2025-11-11 16:30:33,603 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event 4ac7212f-79fc-46c6-859f-67d7568f1630
+2025-11-11 16:30:33,603 - notification_service - INFO - publish:246 - Event 4ac7212f-79fc-46c6-859f-67d7568f1630 will be sent to 0 out of 0 subscribers
+2025-11-11 16:30:33,605 - notification_service - INFO - publish:261 - No eligible subscribers for event 4ac7212f-79fc-46c6-859f-67d7568f1630
+2025-11-11 16:31:06,716 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:31:18,059 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 56444
+2025-11-11 16:31:18,059 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: eff93261-5e9f-4174-93bf-78623f31f74b - Type: system_notification - Conversation: None
+2025-11-11 16:31:18,060 - notification_service - INFO - publish:229 - Publishing event eff93261-5e9f-4174-93bf-78623f31f74b of type system_notification for conversation None
+2025-11-11 16:31:18,061 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event eff93261-5e9f-4174-93bf-78623f31f74b
+2025-11-11 16:31:18,061 - notification_service - INFO - publish:246 - Event eff93261-5e9f-4174-93bf-78623f31f74b will be sent to 0 out of 0 subscribers
+2025-11-11 16:31:18,061 - notification_service - INFO - publish:261 - No eligible subscribers for event eff93261-5e9f-4174-93bf-78623f31f74b
+2025-11-11 16:31:30,742 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 16:31:40,307 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 56537
+2025-11-11 16:31:40,308 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: c8d6aa93-4b11-4f13-a92a-0f53917b3fe0 - Type: system_notification - Conversation: None
+2025-11-11 16:31:40,308 - notification_service - INFO - publish:229 - Publishing event c8d6aa93-4b11-4f13-a92a-0f53917b3fe0 of type system_notification for conversation None
+2025-11-11 16:31:40,309 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event c8d6aa93-4b11-4f13-a92a-0f53917b3fe0
+2025-11-11 16:31:40,309 - notification_service - INFO - publish:246 - Event c8d6aa93-4b11-4f13-a92a-0f53917b3fe0 will be sent to 0 out of 0 subscribers
+2025-11-11 16:31:40,309 - notification_service - INFO - publish:261 - No eligible subscribers for event c8d6aa93-4b11-4f13-a92a-0f53917b3fe0
+2025-11-11 17:01:33,732 - notification_service - INFO - __init__:193 - NotificationService initialized
+2025-11-11 17:01:43,803 - notification_service - INFO - broadcast_system_message:342 - Broadcasting system message: [info] Server started with MCP management capabilities on port 65395
+2025-11-11 17:01:43,803 - notification_service - DEBUG - __post_init__:98 - Created NotificationEvent: d76a503a-44f0-4c3a-bffe-43eec0d6dbc0 - Type: system_notification - Conversation: None
+2025-11-11 17:01:43,803 - notification_service - INFO - publish:229 - Publishing event d76a503a-44f0-4c3a-bffe-43eec0d6dbc0 of type system_notification for conversation None
+2025-11-11 17:01:43,803 - notification_service - DEBUG - publish:236 - Checking 0 subscribers for event d76a503a-44f0-4c3a-bffe-43eec0d6dbc0
+2025-11-11 17:01:43,803 - notification_service - INFO - publish:246 - Event d76a503a-44f0-4c3a-bffe-43eec0d6dbc0 will be sent to 0 out of 0 subscribers
+2025-11-11 17:01:43,805 - notification_service - INFO - publish:261 - No eligible subscribers for event d76a503a-44f0-4c3a-bffe-43eec0d6dbc0

@@ -1,0 +1,18 @@
+{
+  "api_keys": {
+    "anthropic": "",
+    "openai": ""
+  },
+  "default_model": "claude-sonnet-4-20250514",
+  "user_preferences": {},
+  "model_preferences": {
+    "claude-sonnet-4-20250514": {
+      "enable_thinking": "false"
+    }
+  },
+  "provider_preferences": {
+    "anthropic": {
+      "enable_thinking": "false"
+    }
+  }
+}

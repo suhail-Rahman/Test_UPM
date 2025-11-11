@@ -1,0 +1,25 @@
+<UXML xmlns="UnityEngine.UIElements"
+      xmlns:ui="UnityEngine.UIElements"
+      xmlns:sawyer="Sawyer.Editor.UI.Components">
+
+    <Style src="../../USS/SawyerCommon.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/Title/Title.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/Model/Model.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/PrimaryActionButton/PrimaryActionButton.uss" />
+
+    <ui:VisualElement name="content-container" class="content-container">
+        
+        <ui:VisualElement name="header-container" class="header-container__welcome_screen">
+            <sawyer:Model />
+        </ui:VisualElement>
+
+        <sawyer:Title text="WELCOME TO SAWYER" />
+        <ui:Label font-size="14" text="May AI be with you." name="welcome-subtitle" class="subtitle-label"/>
+
+        <sawyer:PrimaryActionButton
+            name="launch-button"
+            class="button-footer-get_started"
+            text="Get Started"
+            icon="arrow" />
+    </ui:VisualElement>
+</UXML>

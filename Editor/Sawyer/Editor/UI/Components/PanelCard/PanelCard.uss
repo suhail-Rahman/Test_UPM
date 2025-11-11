@@ -1,0 +1,84 @@
+.panel-card {
+    background-color: #3F3F3F;
+    /*padding: 24px;*/
+    /*margin: 16px 0;*/
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    overflow: hidden;
+    /* Add subtle shadow effect */
+    /* Frame 42 */
+    margin-top: 3%;
+    /* Auto layout */
+    display: flex;
+    align-items: flex-start;
+    padding: 4% 5% 0;
+
+
+    border-radius: 5px;
+
+    /* Inside auto layout */
+    flex: none;
+
+    flex-grow: 0;
+
+}
+/* PanelCard.uss */
+
+
+.panel-card__title {
+    color: white;
+    font-size: 20px;
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+    -unity-text-align: middle-center;
+}
+
+.panel-card__subtitle {
+    color: #BBBBBB;
+    font-size: 14px;
+    margin-bottom: 20px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    max-width: 500px;
+    align-self: center;
+}
+
+.panel-card__content {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Variants */
+
+/* Compact card with less padding */
+.panel-card--compact {
+    padding: 16px;
+}
+
+/* Card with emphasized border */
+.panel-card--bordered {
+    border-width: 1px;
+    border-color: #3E3E3E;
+}
+
+/* Card with shadow effect */
+.panel-card--shadow {
+    border-width: 0;
+    /* Note: Unity's UIElements don't directly support box-shadow,
+       but we can create a similar effect with a combination of properties */
+    background-color: #2A2A2A;
+}
+
+/* Card with error state */
+.panel-card--error {
+    border-color: #CF2323;
+    border-width: 1px;
+}
+
+/* Card with success state */
+.panel-card--success {
+    border-color: #4CAF50;
+    border-width: 1px;
+}

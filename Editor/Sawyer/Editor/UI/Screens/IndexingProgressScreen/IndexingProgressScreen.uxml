@@ -1,0 +1,35 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEngine.UIElements" xmlns:sawyer="Sawyer.Editor.UI.Components">
+
+    <Style src="../../USS/SawyerCommon.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StepIndicator/StepIndicator.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/PanelCard/PanelCard.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/PrimaryActionButton/PrimaryActionButton.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StatusInfoCard/StatusInfoCard.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/RadialProgress/RadialProgress.uss" />
+
+    <ui:VisualElement name="content-container" class="content-container">
+        <ui:VisualElement name="top-area-bg" class="top-area-bg"/>
+        <!-- Top Logo -->
+        <ui:VisualElement name="top-section" class="top-section">
+            <ui:VisualElement name="logo-wrapper" class="logo-wrapper">
+                <sawyer:LogoIcon name="logo-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+
+
+        <!-- Step Indicator -->
+        <sawyer:StepIndicator name="step-indicator" class="step-indicator-bar" />
+    
+        <sawyer:PanelCard name="indexing-card" class="panel-card-centered">
+            <ui:Label class="title-select-code" text="Index your codebase" />
+            <ui:Label class="subtitle-select-code"
+                      text="Sawyer needs to understand your code to assist you effectively. Select which part of your project to include." />
+            <sawyer:RadialProgress name="progress-ring" class="progress-ring" style="align-self:center; "/>
+            <sawyer:StatusInfoCard name="status-card" />
+        </sawyer:PanelCard>
+
+    </ui:VisualElement>
+   
+
+</UXML>

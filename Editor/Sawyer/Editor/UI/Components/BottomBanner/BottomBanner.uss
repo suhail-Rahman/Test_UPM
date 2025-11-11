@@ -1,0 +1,114 @@
+/* BottomBanner.uss */
+
+.bottom-banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    background-color: #323232;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+
+    overflow: hidden;
+    flex-grow: 0;
+}
+
+/* Icon styling */
+.bottom-banner__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 0;
+}
+
+/* Text styling */
+.bottom-banner__text {
+    flex-grow: 1;
+    color: white;
+    font-size: 14px;
+    -unity-text-align: middle-left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+/* Close button styling */
+.bottom-banner__close-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-width: 0;
+    margin-left: 12px;
+    flex-shrink: 0;
+    background-image: resource("d_winbtn_win_close");
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: #BBBBBB;
+    transition-duration: 0.15s;
+    transition-property: -unity-background-image-tint-color;
+    flex-grow: 0;
+}
+
+.bottom-banner__close-button:hover {
+    -unity-background-image-tint-color: white;
+    background-color: transparent;
+}
+
+.bottom-banner__close-button:active {
+    -unity-background-image-tint-color: #AAAAAA;
+    background-color: transparent;
+    flex-grow: 0;
+}
+
+/* Error type styling */
+.bottom-banner--error {
+    background-color: #CF2323; /* Red */
+    flex-grow: 1;
+}
+
+.bottom-banner--error .bottom-banner__icon {
+    background-image: resource("d_console.erroricon.sml");
+    -unity-background-image-tint-color: white;
+    flex-grow: 0;
+}
+
+/* Success type styling */
+.bottom-banner--success {
+    background-color: #4CAF50; /* Green */
+}
+
+.bottom-banner--success .bottom-banner__icon {
+    background-image: resource("d_console.infoicon.sml");
+    -unity-background-image-tint-color: white;
+}
+
+/* Info type styling */
+.bottom-banner--info {
+    background-color: #2196F3; /* Blue */
+}
+
+.bottom-banner--info .bottom-banner__icon {
+    background-image: resource("d_console.infoicon.sml");
+    -unity-background-image-tint-color: white;
+    flex-grow: 0;
+}
+
+/* Animation states */
+.bottom-banner--entering {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.bottom-banner--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bottom-banner--exiting {
+    opacity: 0;
+    transform: translateY(40px);
+}

@@ -1,0 +1,128 @@
+﻿/* ModeToggleButton.uss */
+
+.mode-toggle-button {
+    flex-direction: row;
+    height: 29px;
+    width: 180px;
+    margin-left: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(40, 40, 40, 0.5); /* Semi-transparent background matching SVG */
+}
+
+/* Agent mode button (left side - orange when active) */
+.mode-toggle-button__agent {
+    width: 89px;
+    height: 23px;
+    margin: 3px 0 3px 3px;
+    border-radius: 3px;
+    border-width: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+}
+
+.mode-toggle-button__agent--active {
+    background-color: #EC5B1F; /* Orange color from SVG */
+}
+
+.mode-toggle-button__agent--active:hover {
+    background-color: #FF6B2F; /* Slightly lighter orange on hover */
+}
+
+.mode-toggle-button__agent--inactive {
+    background-color: transparent;
+}
+
+.mode-toggle-button__agent--inactive:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Chat mode button (right side - dark when active) */
+.mode-toggle-button__chat {
+    width: 82px;
+    height: 23px;
+    margin: 3px 3px 3px 0;
+    border-radius: 3px;
+    border-width: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+}
+
+.mode-toggle-button__chat--active {
+    background-color: #EC5B1F; /* Dark color from SVG */
+}
+
+.mode-toggle-button__chat--active:hover {
+    background-color: #FF6B2F; /* Slightly lighter dark on hover */
+}
+
+.mode-toggle-button__chat--inactive {
+    background-color: transparent;
+}
+
+.mode-toggle-button__chat--inactive:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Label styling */
+.mode-toggle-button__label {
+    color: white;
+    font-size: 11px;
+    -unity-text-align: middle-center;
+    -unity-font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* Active state label styling */
+.mode-toggle-button__agent--active .mode-toggle-button__label {
+    color: white;
+    -unity-font-style: bold;
+}
+
+.mode-toggle-button__chat--active .mode-toggle-button__label {
+    color: rgba(255, 247, 247, 0.8); /* Slightly transparent white from SVG */
+    -unity-font-style: bold;
+}
+
+/* Inactive state label styling */
+.mode-toggle-button__agent--inactive .mode-toggle-button__label,
+.mode-toggle-button__chat--inactive .mode-toggle-button__label {
+    color: rgba(255, 255, 255, 0.6);
+    -unity-font-style: normal;
+}
+
+/* Disabled state */
+.mode-toggle-button--disabled {
+    opacity: 0.5;
+}
+
+.mode-toggle-button--disabled .mode-toggle-button__agent,
+.mode-toggle-button--disabled .mode-toggle-button__chat {
+    background-color: #5E5E5E;
+}
+
+.mode-toggle-button--disabled .mode-toggle-button__label {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Focus states for accessibility */
+.mode-toggle-button__agent:focus,
+.mode-toggle-button__chat:focus {
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.0);
+}
+
+/* Animation for smooth transitions */
+.mode-toggle-button__agent,
+.mode-toggle-button__chat {
+    transition-duration: 0.15s;
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-out;
+}

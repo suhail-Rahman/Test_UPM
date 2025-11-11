@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:sawyer="Sawyer.Editor.UI.Components">
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/USS/SawyerCommon.uss?fileID=7433441132597879392&amp;guid=33e2f81dcba6e2144801a40025c5cf31&amp;type=3#SawyerCommon" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Screens/ChatHistory/ChatHistory.uss" />
+    
+    <ui:VisualElement name="root" class="root-container">
+        <sawyer:HeaderBar style="flex-shrink: 0;"/>
+        
+        <ui:VisualElement class="search-section">
+            <ui:TextField name="search-input" />
+            <ui:Button name="search-button" />
+        </ui:VisualElement>
+        
+        <ui:ScrollView name="history-list" />
+    </ui:VisualElement>
+</ui:UXML>

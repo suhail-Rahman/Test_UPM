@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements">
+    
+    <ui:VisualElement name="expandable-panel-root" class="expandable-panel-root">
+        <ui:VisualElement name="header" class="panel-header">
+            <ui:Label name="panel-title-label" text="Panel" class="panel-title" />
+            <ui:Button name="toggle-button" class="toggle-button" />
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="panel-container" class="panel-container">
+            <ui:ScrollView horizontal-scroller-visibility="Hidden" class="panel-text-scroller">
+                <ui:TextField name="panel-text-edit" multiline="true" class="panel-text-edit" />
+            </ui:ScrollView>
+            <ui:Button name="resize-handle" class="resize-handle" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

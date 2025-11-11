@@ -1,0 +1,120 @@
+/* CodeReviewFooter.uss */
+
+.code-review-footer {
+    background-color: rgb(61, 61, 61); /* 0.24f, 0.24f, 0.24f */
+    border-top-width: 1px;
+    border-top-color: rgb(77, 77, 77); /* 0.3f, 0.3f, 0.3f */
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 60px;
+    flex-shrink: 0; /* Don't shrink footer */
+}
+
+.footer-bottom-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unity-status-section {
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-bullet {
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+
+.status-bullet--green {
+    background-color: rgb(51, 204, 51); /* 0.2f, 0.8f, 0.2f */
+}
+
+.status-bullet--cyan {
+    background-color: rgb(51, 204, 204); /* 0.2f, 0.8f, 0.8f */
+}
+
+.status-label {
+    font-size: 11px;
+    color: rgb(204, 204, 204); /* 0.8f, 0.8f, 0.8f */
+}
+
+.status-label--playmode {
+    margin-right: 20px;
+}
+
+.action-buttons-section {
+    flex-direction: row;
+    margin-right: 8px;
+}
+
+.action-button {
+    color: white;
+    
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 8px;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+.action-button--apply {
+    background-color: rgb(235, 92, 31); /* 0.92f, 0.36f, 0.12f */
+}
+
+.action-button--apply:hover {
+    background-color: rgb(255, 112, 51); /* Slightly lighter on hover */
+}
+
+.action-button--apply:active {
+    background-color: rgb(215, 72, 11); /* Slightly darker when pressed */
+}
+
+.action-button--discard {
+    background-color: rgb(102, 102, 102); /* 0.4f, 0.4f, 0.4f */
+}
+
+.action-button--discard:hover {
+    background-color: rgb(122, 122, 122); /* Slightly lighter on hover */
+}
+
+.action-button--discard:active {
+    background-color: rgb(82, 82, 82); /* Slightly darker when pressed */
+}
+
+.action-button:disabled {
+    opacity: 0.5;
+    /*cursor: default;*/
+}
+.button-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    width: 100%;
+}
+
+.button-icon {
+    width: 12px;
+    height: 12px;
+
+
+}
+
+.button-text {
+    margin-left: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+/*.action-button:disabled:hover {*/
+/*    background-color: inherit; !* Don't change color when disabled *!*/
+/*}*/

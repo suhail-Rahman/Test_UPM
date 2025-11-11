@@ -1,0 +1,11 @@
+﻿<UXML xmlns="UnityEngine.UIElements"
+      xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="root" style="width:100%; flex-direction: row;">
+        <ui:VisualElement name="user-icon" class="user-chat-bubble">
+            <ui:Label name="user-icon-label" text="ME" class="user-chat-label"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="chat-bubble" class="chat-bubble">
+            <ui:VisualElement name="content" class="chat-bubble-content" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</UXML>

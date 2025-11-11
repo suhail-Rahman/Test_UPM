@@ -1,0 +1,15 @@
+{
+    "env_var": "OPENAI_API_KEY",
+    "models": {
+      "gpt-5": {
+        "name": "gpt-5",
+        "description": "GPT-5 (Latest Version)",
+        "default_temp": 1,
+        "supports_vision": false,
+        "supports_audio": false,
+        "supports_tools": true,
+        "supports_json_mode": true,
+        "max_tokens": 28000
+      }
+    }
+}

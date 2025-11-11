@@ -1,0 +1,46 @@
+/* CodeReviewSubHeader.uss */
+
+.code-review-subheader {
+    background-color: rgb(61, 61, 61); /* 0.24f, 0.24f, 0.24f - Slightly darker than main header */
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(82, 82, 82); /* 0.32f, 0.32f, 0.32f */
+    min-height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none; /* Hidden by default */
+}
+
+.code-review-subheader--visible {
+    display: flex;
+}
+
+.subheader-description-label {
+    font-size: 13px;
+    color: white;
+    flex-grow: 1;
+}
+
+.apply-all-button {
+    background-color: rgb(235, 92, 31); /* 0.92f, 0.36f, 0.12f - Orange */
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-width: 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.apply-all-button:hover {
+    background-color: rgb(255, 112, 51); /* Slightly lighter orange on hover */
+}
+
+.apply-all-button:active {
+    background-color: rgb(215, 72, 11); /* Slightly darker orange when pressed */
+}

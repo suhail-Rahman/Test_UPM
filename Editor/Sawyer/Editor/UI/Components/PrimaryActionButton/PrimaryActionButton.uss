@@ -1,0 +1,61 @@
+/* PrimaryActionButton.uss */
+
+.unity-button.primary-action-button {
+    background-color: #EC5B1F;
+    color: white;
+
+    -unity-font-style: bold;
+    padding: 12px 12px;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+    border-width: 0;
+    flex-direction: row;
+}
+
+/* Style for the button's text */
+.primary-action-button__text {
+    color: white;
+    -unity-font-style: bold;
+    
+    margin: 0;
+    padding: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.unity-button.primary-action-button:hover {
+    background-color: #E05A00;
+}
+
+.unity-button.primary-action-button:active {
+    background-color: #E64A19; /* Darker orange */
+}
+
+.unity-button.primary-action-button.primary-action-button--disabled {
+    background-color: #8a8a8a; /* Grey */
+    opacity: 0.6;
+}
+
+/* Icon element */
+.primary-action-button__icon {
+    width: 24px;
+    height: 24px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    -unity-background-image-tint-color: white;
+    margin-left: 4px; /* Space between text and icon */
+    display: none; /* Hidden by default, shown when icon is set */
+}
+
+/* Button with arrow icon specifically for "Get Started" and "Launch Sawyer" */
+.unity-button.primary-action-button.primary-action-button--with-arrow .primary-action-button__icon {
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/Welcome_screen_Frame_1/Arrow_icon.png");
+    display: flex;
+}
+
+.unity-button.primary-action-button.primary-action-button--with-plus .primary-action-button__icon {
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon.png");
+    display: flex;
+}

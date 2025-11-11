@@ -1,0 +1,6 @@
+﻿<!-- Assets/Editor/Sawyer/Editor/UI/Components/Title/Title.uxml -->
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="container" class="title-container">
+        <ui:Label name="title-label" class="title-label" text="WELCOME TO SAWYER" />
+    </ui:VisualElement>
+</ui:UXML>

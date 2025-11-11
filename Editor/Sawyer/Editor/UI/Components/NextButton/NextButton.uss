@@ -1,0 +1,84 @@
+/* NextButton.uss */
+
+.next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    background-color: #E64A19; /* Darker orange */
+    border-width: 0;
+}
+
+.next-button:hover {
+    background-color: #FF7043; /* Lighter orange */
+}
+
+.next-button:active {
+    background-color: #E64A19; /* Darker orange */
+}
+
+/* Icon styling */
+.next-button__icon {
+    width: 18px;
+    height: 13px;
+    align-self: center;
+    
+}
+
+.unity-disabled{
+    background-color: #5E5E5E; /* Grey */
+    opacity: 0.6;
+}
+
+
+/* Forward arrow icon */
+.next-button__icon--forward {
+    background-image: resource("d_forward");
+}
+
+/* Up arrow icon */
+.next-button__icon--up {
+    background-image: resource("d_scrollup");
+}
+
+/* Disabled state */
+.next-button--disabled {
+    background-color: #5E5E5E; /* Grey */
+    opacity: 0.6;
+}
+
+/* Back button (variant) */
+.back-button {
+    background-color: #444444; /* Dark grey */
+}
+
+.back-button .next-button__icon {
+    background-image: resource("d_back");
+}
+
+.back-button:hover {
+    background-color: #555555; /* Lighter grey */
+}
+
+.back-button:active {
+    background-color: #333333; /* Darker grey */
+}
+
+/* Button positions in layout */
+.navigation-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    padding: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation-container .next-button {
+    align-self: flex-end;
+}

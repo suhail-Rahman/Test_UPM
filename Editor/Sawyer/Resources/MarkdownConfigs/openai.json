@@ -1,0 +1,90 @@
+﻿{
+  "ModelName": "openai",
+  "CodeFencePattern": "^```",
+  "HeadingPattern": "^(#{1,6})\\s+(.*)",
+  "BoldPattern": "\\*\\*(.+?)\\*\\*",
+  "ItalicPattern": "\\*(.+?)\\*",
+  "InlineCodePattern": "`(.+?)`",
+  "LinkPattern": "\\[(.*?)\\]\\((.*?)\\)",
+  "UnorderedListPattern": "^\\s*[-+*]\\s+(.*)",
+  "OrderedListPattern": "^\\s*\\d+\\.\\s+(.*)",
+  "SyntaxConfig": [
+    {
+      "Language": "csharp",
+      "Tokens": [
+        {
+          "TokenType": "keyword",
+          "Color": {
+            "R": 0.36,
+            "G": 0.56,
+            "B": 0.85,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "type",
+          "Color": {
+            "R": 0.56,
+            "G": 0.76,
+            "B": 0.94,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "class",
+          "Color": {
+            "R": 0.85,
+            "G": 0.36,
+            "B": 0.56,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "string",
+          "Color": {
+            "R": 0.85,
+            "G": 0.36,
+            "B": 0.36,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "comment",
+          "Color": {
+            "R": 0.5,
+            "G": 0.5,
+            "B": 0.5,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "number",
+          "Color": {
+            "R": 0.94,
+            "G": 0.56,
+            "B": 0.36,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "method",
+          "Color": {
+            "R": 0.94,
+            "G": 0.8,
+            "B": 0.28,
+            "A": 1.0
+          }
+        },
+        {
+          "TokenType": "property",
+          "Color": {
+            "R": 0.56,
+            "G": 0.85,
+            "B": 0.56,
+            "A": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

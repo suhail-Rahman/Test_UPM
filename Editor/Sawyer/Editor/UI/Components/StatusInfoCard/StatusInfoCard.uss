@@ -1,0 +1,67 @@
+/* StatusInfoCard.uss */
+
+.status-info-card {
+    background-color: #515151;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 12px 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Icon styling */
+.status-info-card__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Progress icon (star) */
+.status-info-card__icon--progress {
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_star.png");
+}
+
+/* Summary icon (document) */
+.status-info-card__icon--summary {
+    background-image: resource("d_Folder Icon");
+    -unity-background-image-tint-color: white;
+}
+
+/* Content container */
+.status-info-card__content {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Main text */
+.status-info-card__text {
+    color: white;
+    font-size: 16px;
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+
+/* Subtext */
+.status-info-card__subtext {
+    color: #BBBBBB;
+    font-size: 14px;
+    white-space: normal;
+}
+
+/* Summary-specific styling (centered text with large number) */
+.status-info-card--summary .status-info-card__text {
+    font-size: 24px;
+    -unity-text-align: middle-center;
+}
+
+.status-info-card--summary .status-info-card__content {
+    align-items: center;
+}
+
+/* Progress-specific styling */
+.status-info-card--progress {
+    /* Additional progress-specific styling could go here */
+}

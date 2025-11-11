@@ -1,0 +1,13 @@
+﻿<UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="main-area" class="main-area">
+        <ui:ScrollView name="chat-scroll" class="chat-scroll">
+            <ui:VisualElement name="hero" class="hero-section" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+
+    <ui:VisualElement name="main-area-bg" class="main-area-bg">
+        <ui:Image name="logo-image" class="logo" />
+        <ui:Label text="Build with Sawyer" class="hero-title" />
+        <ui:Label text="Context-aware development assistant" class="hero-subtitle" />
+    </ui:VisualElement>
+</UXML>

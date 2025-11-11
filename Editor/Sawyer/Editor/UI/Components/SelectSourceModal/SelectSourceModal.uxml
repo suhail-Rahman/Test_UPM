@@ -1,0 +1,56 @@
+<UXML xmlns:ui="UnityEngine.UIElements"
+      xmlns:sawyer="Sawyer.Editor.UI.Components">
+    
+    <!-- Style sheets -->
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/USS/SawyerCommon.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/DirectoryTreeView/DirectoryTreeView.uss" />
+
+    
+    <!-- Modal Overlay -->
+    <ui:VisualElement name="source-modal" class="modal-container">
+        <ui:VisualElement class="modal-backdrop" />
+        
+        <ui:VisualElement class="modal-panel">
+            <!-- Header -->
+            <ui:Label text="Pick your files to index" class="modal-header" />
+            
+            <!-- Selection Controls -->
+            <ui:VisualElement name="selection-controls" class="selection-controls">
+                <!-- Select All - aligned left -->
+                <ui:Button name="select-all-button" class="start-button">
+                    <ui:VisualElement style="flex-direction:row; align-items:center; padding:6px 12px;">
+                        <ui:VisualElement style="width:24px; height:24px;  background-color:#4CAF50; border-radius:3px; margin-right:8px;" />
+                        <ui:Label text="Select All" />
+                    </ui:VisualElement>
+                </ui:Button>
+                
+                <ui:Button name="deselect-all-button" class="start-button">
+                    <ui:VisualElement style="flex-direction:row; align-items:center; padding:6px 12px;">
+                        <ui:VisualElement style="width:24px; height:24px;  background-color:#F44336; border-radius:3px; margin-right:8px;" />
+                        <ui:Label text="Deselect All" />
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:VisualElement>
+            
+            <!-- Tree View Container -->
+            <ui:VisualElement name="directory-tree-container" 
+                           style="background-color:#121212; border-radius:4px; flex-grow:1; min-height:300px; margin-bottom:16px;" />
+            
+            <!-- File Count Display -->
+            <ui:Label name="file-count-label" 
+                    text="Total script selected: 0" 
+                    style="color:#CCCCCC; margin-bottom:16px;" />
+            
+            <!-- Action Buttons -->
+            <ui:VisualElement style="flex-direction:row; justify-content:space-between;">
+                <ui:Button name="cancel-modal-button" class="cancel-button">
+                    <ui:Label text="Cancel" />
+                </ui:Button>
+                
+                <ui:Button name="confirm-modal-button" class="start-button">
+                    <ui:Label text="Start Indexing" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</UXML>

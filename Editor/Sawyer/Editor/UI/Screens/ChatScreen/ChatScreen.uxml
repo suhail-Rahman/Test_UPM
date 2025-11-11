@@ -1,0 +1,78 @@
+<ui:UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:ui="UnityEngine.UIElements" xmlns:sawyer="Sawyer.Editor.UI.Components" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/HeaderBar/HeaderBar.uss?fileID=7433441132597879392&amp;guid=5093a8f2082471d4c91883adb0577b7c&amp;type=3#HeaderBar" />
+    
+    <ui:VisualElement name="root" class="root-container">
+        <sawyer:HeaderBar />
+        <ui:VisualElement name="main-area" class="main-area">
+            <ui:ScrollView name="chat-scroll" horizontal-scroller-visibility="Hidden" class="chat-scroll">
+                <ui:VisualElement name="hero" class="hero-section" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="main-area-bg" class="main-area-bg">
+            <ui:Image name="logo-image" class="logo" />
+            <ui:Label text="Build with Sawyer" class="hero-title" />
+            <ui:Label text="Context-aware development assistant" class="hero-subtitle" />
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="footer-area-bg" class="footer-area-bg">
+            <ui:VisualElement name="footer" class="footer-area">
+                <ui:VisualElement name="footer-area-top" class="footer-area-top">
+                    <ui:Label name="typing-label" text="Work with Sawyer" class="typing-label" />
+                   
+                </ui:VisualElement>
+                   
+                
+                
+                <!-- We're using a custom component with inline styles -->
+                
+                
+                <ui:VisualElement class="input-row">
+                    <ui:VisualElement name="attachment-preview-row" class="attachment-preview-row" />
+                    <ui:ScrollView name="input-scroll" class="input-scroll">
+                        <ui:TextField name="chat-input" value="It&apos;s snowing outside." multiline="true" class="chat-input" />
+                    </ui:ScrollView>
+                    <ui:VisualElement class="chat-input-buttons">
+                        <ui:Button name="attach-button" class="attach-button">
+                            <ui:Image name="attach-icon" class="attach-icon" />
+                        </ui:Button>
+                        <ui:Button name="send-button" class="send-button">
+                            <ui:Image name="send-icon" class="send-icon" />
+                        </ui:Button>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <sawyer:ExpandablePanel name="notes-panel" panel-title="Notes" is-expanded="false" height-percentage="50" />
+                <ui:Button name="expand-notes-button" class="expand-notes-button">
+                    <ui:Image name="notes-icon" class="notes-icon" />
+                    <ui:Image name="notes-icon-logo" class="notes-icon-logo"/>
+                    <ui:Label text="Sawyer's Memory" style="color:#ffffff;"/>
+                </ui:Button>
+                <ui:VisualElement class="footer-bottom">
+                    <ui:Label text="2.0.0" class="version-label" />
+                    <ui:VisualElement class="footer-bottom-spacer">
+                        <sawyer:ModeToggleButton name="mode-toggle-2" is-agent-mode="false" />
+                        <sawyer:ModelSelector name="model-selector" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+                
+            </ui:VisualElement>
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="settings-dropdown-panel" class="dropdown-panel">
+            <ui:Label text="Settings" class="dropdown-header" />
+            <ui:Button name="knowledge-vault-button" class="dropdown-button">
+                <ui:Image name="icon-vault" class="dropdown-icon" />
+                <ui:Label text="Knowledge Vault" class="dropdown-label" />
+            </ui:Button>
+            <ui:Button name="tools-button" class="dropdown-button">
+                <ui:Image name="icon-tools" class="dropdown-icon" />
+                <ui:Label text="Tools" class="dropdown-label" />
+            </ui:Button>
+            <ui:Button name="api-keys-button" class="dropdown-button">
+                <ui:Image name="icon-api-keys" class="dropdown-icon" />
+                <ui:Label text="API Keys" class="dropdown-label" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

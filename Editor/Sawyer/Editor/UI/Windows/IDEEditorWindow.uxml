@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd">
+
+    <!-- Main toolbar -->
+    <editor:Toolbar>
+        <editor:ToolbarButton name="open-button" text="Open" />
+        <editor:ToolbarButton name="save-button" text="Save" />
+        <editor:ToolbarButton name="save-as-button" text="Save As" />
+        <editor:ToolbarSpacer />
+        <editor:ToolbarButton name="refresh-button" text="Refresh" />
+        <editor:ToolbarSpacer />
+        <editor:ToolbarMenu name="language-dropdown" text="Language" />
+    </editor:Toolbar>
+
+    <!-- Main container with split view -->
+    <engine:VisualElement name="main-container" class="main-container">
+        <!-- Left panel for project explorer -->
+        <engine:VisualElement name="left-panel" class="left-panel">
+            <!-- Project explorer header -->
+            <engine:Label text="Project Explorer" class="panel-header" />
+            
+            <!-- Project explorer tree view -->
+            <engine:TreeView name="project-explorer" class="project-explorer" />
+        </engine:VisualElement>
+
+        <!-- Right panel for editor -->
+        <engine:VisualElement name="right-panel" class="right-panel">
+            <!-- Tab container -->
+            <engine:VisualElement name="tab-container" class="tab-container" />
+            
+            <!-- Editor container -->
+            <engine:VisualElement name="editor-container" class="editor-container">
+                <!-- Line numbers -->
+                <engine:TextField name="line-number-field" multiline="true" readonly="true" class="line-number-field" />
+                
+                <!-- Editor wrapper with scroll view -->
+                <engine:VisualElement name="editor-wrapper" class="editor-wrapper">
+                    <engine:ScrollView name="text-container" mode="VerticalAndHorizontal" class="text-container" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+
+    <!-- Status bar -->
+    <engine:VisualElement name="status-bar" class="status-bar">
+        <engine:Label name="status-label" text="No file open" class="status-label" />
+    </engine:VisualElement>
+</engine:UXML>

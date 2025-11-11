@@ -1,0 +1,693 @@
+/* KnowledgeVault.uss - Updated with Tab Styling */
+:root {
+    --background-color: #3F3F3F;
+    --card-background: #383838;
+    --header-background: #282828;
+    --input-background: #333333;
+    --scrollbar-background: #2E2E2E;
+    --scrollbar-thumb: #4D4D4D;
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #CDCDCD;
+    --text-tertiary: #B3B3B3;
+
+    --accent-color: #EC5B1F;
+    --accent-color-hover: #b84910;
+
+    --button-secondary: #515151;
+    --button-secondary-hover: #323232;
+
+    --checkbox-background: #363636;
+    --checkbox-border: #3C3C3C;
+    --checkbox-checked: #EC5B1F;
+
+    --tree-item-background: #1A1A1A;
+
+    --delete-icon-color: #FFFFFF;
+
+    /* Tab specific colors */
+    --tab-inactive-background: #2A2A2A;
+    --tab-active-background: #383838;
+    --tab-border-color: #515151;
+    --tab-hover-background: #353535;
+
+    /* Size constants */
+    --header-height: 104px;
+    --content-padding: 40px;
+    --border-radius-small: 5px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 9px;
+}
+
+.root-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--background-color);
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/welcome_pattern.png");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.knowledge-vault-main-card {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* Tab Container Styling */
+.tab-container {
+    flex-direction: row;
+    height: 4%;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--tab-border-color);
+    background-color: var(--header-background);
+    overflow: hidden;
+}
+
+/* Tab Button Styling */
+.tab-button {
+    flex-grow: 1;
+    height: 100%;
+    background-color: var(--tab-inactive-background);
+    border-width: 0;
+    border-right-width: 1px;
+    border-right-color: var(--tab-border-color);
+    color: var(--text-secondary);
+    font-size: 13px;
+    -unity-font-style: normal;
+    -unity-text-align: middle-center;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.2s;
+}
+
+.tab-button:hover {
+    background-color: var(--tab-hover-background);
+    color: var(--text-primary);
+}
+
+.tab-button-active {
+    background-color: var(--tab-active-background);
+    color: var(--text-primary);
+    -unity-font-style: bold;
+    border-bottom-width: 3px;
+    border-bottom-color: var(--accent-color);
+}
+
+.tab-button-active:hover {
+    background-color: var(--tab-active-background);
+}
+
+/* Remove right border from last tab button */
+.tab-button {
+    border-right-width: 0;
+}
+
+/* Tab Content Container */
+.tab-content-container {
+    flex-grow: 1;
+    border-bottom-left-radius: var(--border-radius-medium);
+    border-bottom-right-radius: var(--border-radius-medium);
+    overflow: hidden;
+}
+
+/* Tab Panel Styling */
+.tab-panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-panel-hidden {
+    display: none;
+}
+
+/* Playbooks Specific Styling */
+.playbooks-content {
+    padding: 20px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.playbooks-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.playbooks-title {
+    font-size: 24px;
+    color: var(--text-primary);
+    -unity-font-style: bold;
+}
+
+.add-playbook-button {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border-width: 0;
+    border-radius: var(--border-radius-medium);
+    padding: 12px 20px;
+    font-size: 14px;
+    -unity-font-style: normal;
+}
+
+.add-playbook-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+.playbooks-scroll-view {
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+/* Playbook Card Styling */
+.playbook-card {
+    background-color: var(--input-background);
+    border-radius: var(--border-radius-medium);
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.playbook-card-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.playbook-card-name {
+    font-size: 16px;
+    color: var(--text-primary);
+    -unity-font-style: bold;
+}
+
+.playbook-card-command {
+    font-size: 12px;
+    color: var(--sawyer-text);
+    background-color: var(--header-background);
+    padding: 4px 8px;
+    border-radius: var(--border-radius-small);
+}
+
+.playbook-card-description {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+.playbook-card-prompt {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    margin-bottom: 12px;
+    white-space: normal;
+}
+
+.playbook-card-buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.playbook-edit-button {
+    background-color: #BE4A19;
+    color: var(--text-primary);
+    border-width: 0;
+    border-radius: var(--border-radius-small);
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.playbook-delete-button {
+    background-color: #BE2219;
+    color: var(--text-primary);
+    border-width: 0;
+    border-radius: var(--border-radius-small);
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.playbook-category-header {
+    font-size: 16px;
+    color: var(--text-secondary);
+    -unity-font-style: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.playbooks-empty-label {
+    color: var(--text-tertiary);
+    font-size: 14px;
+    -unity-text-align: middle-center;
+    margin-top: 50px;
+}
+
+/* Playbook Editor Modal Styling */
+.playbook-editor-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(16, 16, 16, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.playbook-editor-container {
+    background-color: var(--header-background);
+    border-radius: var(--border-radius-medium);
+    padding: 30px;
+    width: 80%;
+    height: 90%;
+    border-width: 1px;
+    border-color: var(--tab-border-color);
+}
+
+.playbook-editor-title {
+    font-size: 20px;
+    color: var(--text-primary);
+    -unity-font-style: bold;
+    margin-bottom: 25px;
+    -unity-text-align: middle-center;
+}
+
+.playbook-field-container {
+    height: 20%;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.playbook-field-container-prompt {
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 386px;
+}
+
+.playbook-field-label {
+    font-size: 14px;
+    color: var(--text-primary);
+    -unity-font-style: bold;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.playbook-text-field {
+    background-color: var(--input-background);
+    color: var(--text-primary);
+    font-size: 14px;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: var(--border-radius-small);
+}
+
+.playbook-prompt-scroll {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: var(--input-background);
+    border-radius: var(--border-radius-small);
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.playbook-dropdown-field {
+    background-color: var(--input-background);
+    border-radius: var(--border-radius-small);
+    color: var(--text-primary);
+    font-size: 14px;
+    height: 35px;
+}
+
+.playbook-prompt-field {
+    background-color: transparent;
+    border-width: 0;
+    color: var(--text-primary);
+    font-size: 14px;
+    padding: 12px;
+    margin: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    min-height: 180px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.playbook-editor-buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+/* Rest of the existing styles remain the same */
+.screen-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+
+}
+
+.header-bar {
+    background-color: var(--header-background);
+    border-bottom-width: 1px;
+    border-bottom-color: #515151;
+    padding: 20px 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.tools-container {
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.header-logo-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    gap: 15px;
+}
+
+.header-logo {
+    width: 64px;
+    height: 64px;
+    margin-left: 8%;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/kitsune.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.header-title {
+    font-size: 25px;
+    -unity-font-style: bold;
+    color: var(--text-primary);
+    -unity-text-align: middle-center;
+}
+
+.header-close-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.header-close-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-width: 2px;
+    border-color: var(--text-primary);
+}
+
+.content-container {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius-medium);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.section-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+.section-title {
+    font-size: 14px;
+    color: var(--text-secondary);
+    -unity-font-style: normal;
+    font-weight: 300;
+}
+
+.icon-button {
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    border-width: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_edit.png");
+}
+
+.rules-textarea {
+    /*background-color: var(--input-background);*/
+    color: var(--text-primary);
+    border-radius: var(--border-radius-small);
+    flex-grow: 0;
+    overflow: visible;
+    font-size: 16px;
+    height: 100%;
+    border-width: 0;
+    min-height: 200px;
+    width: 100%;
+    align-self: center;
+    padding: 15px;
+}
+
+.rules-text-scroll{
+    height: 1%;
+    width: 82%;
+    align-self: center;
+    flex-grow: 0.5;
+    background-color: var(--input-background);
+}
+
+.unity-scroll-view__content-container{
+    flex-grow: 0.97;
+}
+
+.unity-base-text-field__input, .unity-base-text-field__input__multiline{
+    height: 100%;
+    border-width: 0;
+    background-color: transparent;
+}
+
+.rules-section{
+    width: 80%;
+    flex-direction: row;
+    align-self: center;
+    min-height: 3%;
+    margin-top: 10%;
+    margin-bottom: 2px;
+}
+
+.index-section{
+    width: 80%;
+    flex-direction: row;
+    align-self: center;
+    min-height: 3%;
+    margin-top: 10%;
+    margin-bottom: 2px;
+}
+
+.folder-section{
+    width: 80%;
+    flex-direction: row;
+    align-self: center;
+    min-height: 3%;
+    margin-top: 5%;
+    margin-bottom: 2px;
+}
+
+.files-section {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+.panel-card{
+    width: 82%;
+    padding: 0;
+    background-color: var(--card-background);
+    margin-top: 0;
+    align-self: center;
+    height: 60%;
+}
+
+.panel-card__content{
+    height: 80%;
+    flex-grow: 1;
+}
+
+.directory-container {
+    background-color: var(--tree-item-background);
+    border-radius: var(--border-radius-large);
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+    height: 70%;
+    width: 90%;
+    align-self: center;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    justify-content: center;
+    width: 90%;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.unity-base-slider__tracker{
+    border-width: 0;
+    background-color: #2E2E2E;
+}
+
+.unity-base-slider__dragger{
+    border-radius: 0;
+}
+
+.directory-tree {
+    flex-grow: 1;
+}
+
+.scrollbar {
+    width: 13px;
+    height: 100%;
+    background-color: var(--scrollbar-background);
+    border-radius: 3px;
+    padding: 3px 2px;
+}
+
+.scrollbar-thumb {
+    width: 9px;
+    height: 35px;
+    background-color: var(--scrollbar-thumb);
+    border-radius: 4.5px;
+    align-self: center;
+}
+
+.scrollbar-arrow-up {
+    width: 9px;
+    height: 7px;
+    background-color: var(--scrollbar-thumb);
+    align-self: center;
+}
+
+.scrollbar-arrow-down {
+    width: 9px;
+    height: 7px;
+    background-color: var(--scrollbar-thumb);
+    align-self: center;
+    transform: rotate(180deg);
+}
+
+.file-count {
+    font-size: 14px;
+    color: var(--text-secondary);
+    align-self: center;
+    width: 90%;
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 90%;
+    align-self: center;
+    margin-bottom: -10px;
+}
+
+.primary-button {
+    padding: 14px 14px;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border-radius: var(--border-radius-large);
+    border-width: 0;
+    font-size: 14px;
+    height: 32px;
+}
+
+.secondary-button {
+    padding: 14px 14px;
+    background-color: var(--button-secondary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius-large);
+    border-width: 0;
+    font-size: 14px;
+    height: 32px;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-hover);
+}
+
+.secondary-button:hover {
+    background-color: var(--button-secondary-hover);
+}
+
+.tree-item {
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 14px;
+}
+
+.tree-item-indent {
+    margin-left: 40px;
+}
+
+.tree-item-expand-icon {
+    width: 9px;
+    height: 9px;
+    border-width: 2px;
+    border-color: #BDBDBD;
+    margin-right: 7px;
+}
+
+.tree-item-checkbox {
+    width: 21px;
+    height: 20px;
+    background-color: var(--checkbox-background);
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.tree-item-checkbox.checked {
+    background-color: var(--checkbox-checked);
+}
+
+.tree-item-checkbox-icon {
+    width: 9.33px;
+    height: 6.42px;
+    border-width: 2px;
+    border-color: var(--checkbox-border);
+}
+
+.tree-item-checkbox.checked .tree-item-checkbox-icon {
+    border-color: #1E1E1E;
+}
+
+.tree-item-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+}

@@ -1,0 +1,115 @@
+<ui:UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEngine.UIElements" xmlns:sawyer="Sawyer.Editor.UI.Components" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/USS/SawyerCommon.uss?fileID=7433441132597879392&amp;guid=8148d800217796d4a8edd40476cfe0d3&amp;type=3#SawyerCommon" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StepIndicator/StepIndicator.uss?fileID=7433441132597879392&amp;guid=5a9898be1d79c6f4cbf5f0b7873f8fe9&amp;type=3#StepIndicator" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/PanelCard/PanelCard.uss?fileID=7433441132597879392&amp;guid=d963451a85571144a8463924161675f6&amp;type=3#PanelCard" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/DirectoryTreeView/DirectoryTreeView.uss?fileID=7433441132597879392&amp;guid=ddef69ec53ad642409e511277b51bcda&amp;type=3#DirectoryTreeView" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/HeaderBar/HeaderBar.uss?fileID=7433441132597879392&amp;guid=f271263fe04459640a9ba2ea98962dd4&amp;type=3#HeaderBar" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Screens/KnowledgeVault/KnowledgeVault.uss?fileID=7433441132597879392&amp;guid=ed2ea47862b2078419c385c236a5df19&amp;type=3#KnowledgeVault" />
+    
+    <ui:VisualElement name="root" class="root-container">
+        <sawyer:HeaderBar style="align-self: stretch; flex-shrink: 0;" />
+        
+        <!-- Main content card wrapper -->
+        <ui:VisualElement name="knowledge-vault-card" class="knowledge-vault-main-card">
+            
+            <!-- Tab Navigation -->
+            <ui:VisualElement name="tab-container" class="tab-container">
+                <ui:Button name="rules-tab-button" text="Rules &amp; Index" class="tab-button tab-button-active" />
+                <ui:Button name="playbooks-tab-button" text="Playbooks" class="tab-button" />
+            </ui:VisualElement>
+            
+            <!-- Content Container -->
+            <ui:VisualElement name="content-container" class="tab-content-container">
+                
+                <!-- Rules & Index Panel -->
+                <ui:VisualElement name="rules-panel" class="tab-panel">
+                    <ui:ScrollView vertical-scroller-visibility="AlwaysVisible" class="tools-container">
+                        <ui:VisualElement name="rules-section" class="folder-section" >
+                            <ui:Label text="Codebase Indexing - File Selection" class="section-title" />
+                        </ui:VisualElement>
+                        <sawyer:PanelCard name="knowledge-vault-main-card" class="panel-card">
+                            <ui:VisualElement class="files-section">
+                                <ui:Label text="Pick your files to index" class="section-subtitle" />
+                                <ui:ScrollView name="directory-tree-container" class="directory-container">
+                                    <sawyer:DirectoryTreeView name="kv-directory-tree" />
+                                </ui:ScrollView>
+                                <ui:Label name="file-count-label" text="Total scripts selected: 0" class="file-count" />
+                                <ui:VisualElement class="button-row">
+                                    <ui:Button name="cancel-button" text="Cancel" class="secondary-button" />
+                                    <ui:Button name="save-button" text="Save Changes" class="primary-button" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </sawyer:PanelCard>
+                        <ui:VisualElement name="index-section" class="index-section">
+                            <ui:Label text="Codebase Indexing - File Summary" class="section-title" />
+                            <ui:Button name="edit-index-button" class="icon-button" />
+                        </ui:VisualElement>
+                        <ui:ScrollView name="rules-text-scroll" class="rules-text-scroll" style="height: 1%; overflow: hidden; flex-shrink: 0; width: 82%; min-height: 200px;">
+                            <ui:TextField name="index-text" multiline="true" max-length="-1" class="rules-textarea" style="color: rgb(255, 255, 255); white-space: pre-wrap;" />
+                        </ui:ScrollView>
+                        <ui:VisualElement name="rules-section" class="rules-section">
+                            <ui:Label text="Sawyer Rules" class="section-title" />
+                            <ui:Button name="edit-rules-button" class="icon-button" />
+                        </ui:VisualElement>
+                        <ui:ScrollView name="rules-text-scroll" class="rules-text-scroll" style="flex-grow: 0; height: 1%; overflow: hidden; flex-shrink: 0; width: 82%; min-height: 200px;">
+                            <ui:TextField name="rules-text" multiline="true" class="rules-textarea" />
+                        </ui:ScrollView>
+                        <ui:VisualElement name="empty-spacer" style="margin-top: 5%;margin-bottom: 2px;">
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                
+                <!-- Playbooks Panel (initially hidden) -->
+                <ui:VisualElement name="playbooks-panel" class="tab-panel tab-panel-hidden">
+                    <ui:VisualElement class="playbooks-content">
+                        <ui:VisualElement class="playbooks-header">
+                            <ui:Label text="Playbooks" class="playbooks-title" />
+                            <ui:Button name="add-playbook-button" text="+ Add Playbook" class="add-playbook-button" />
+                        </ui:VisualElement>
+                        <ui:ScrollView name="playbooks-scroll-view" class="playbooks-scroll-view">
+                            <!-- Playbook cards will be added dynamically here -->
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                    
+                    <!-- Playbook Editor Modal (initially hidden) -->
+                    <ui:VisualElement name="playbook-editor-panel" class="playbook-editor-modal">
+                        <ui:VisualElement class="playbook-editor-container">
+                            <ui:Label text="Playbook Editor" class="playbook-editor-title" />
+                            
+                            <ui:VisualElement class="playbook-field-container">
+                                <ui:Label text="Name:" class="playbook-field-label" />
+                                <ui:TextField name="playbook-name-field" class="playbook-text-field" />
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="playbook-field-container">
+                                <ui:Label text="Description:" class="playbook-field-label" />
+                                <ui:TextField name="playbook-description-field" class="playbook-text-field" />
+                            </ui:VisualElement>
+                            
+                           
+                            
+                            <ui:VisualElement class="playbook-field-container-prompt">
+                                <ui:Label text="Prompt:" class="playbook-field-label" />
+                                <ui:ScrollView name="playbook-prompt-scroll" 
+                                               class="playbook-prompt-scroll" 
+                                               vertical-scroller-visibility="Auto"
+                                               horizontal-scroller-visibility="Hidden"
+                                               mode="VerticalAndHorizontal">
+                                    <ui:TextField name="playbook-prompt-field" 
+                                                  multiline="true" 
+                                                  class="playbook-prompt-field" />
+                                </ui:ScrollView>
+                            </ui:VisualElement>
+                            
+                            <ui:VisualElement class="playbook-editor-buttons">
+                                <ui:Button name="cancel-playbook-button" text="Cancel" class="secondary-button" />
+                                <ui:Button name="save-playbook-button" text="Save" class="primary-button" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

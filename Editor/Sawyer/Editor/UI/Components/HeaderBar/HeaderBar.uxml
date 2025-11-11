@@ -1,0 +1,28 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="header-bar">
+        <ui:Button name="back-button" class="header-button-back" />
+        <ui:Button name="close-buttonL" class="header-button-closeL" />
+        <ui:Image name="header-logo" class="header-logo"/>
+        <ui:Label text="Sawyer" name="header-title" class="header-title" />
+        <ui:VisualElement class="header-actions">
+            <ui:Button name="newchat-button" class="newchat-button">
+                <ui:Image name="newchat-button-tools" class="newchat-button-icon" />
+                <ui:Label text="New Chat" class="newchat-button-label" />
+            </ui:Button>
+            
+            <ui:Button name="StatusButton" class="status-button">
+                <ui:VisualElement name="status-indicator" class="status-indicator" />
+                <ui:Label text="Online" class="status-button-label" />           
+            </ui:Button>
+
+            
+            <ui:Button name="delete_history-button" class="delete_history-button">
+                <ui:Image name="delete_history-button-tools" class="delete_history-button-icon" />
+                <ui:Label text="Delete History" class="delete_history-button-label" />
+            </ui:Button>
+            <ui:Button name="history-button" class="header-button-history" />
+            <ui:Button name="header-button-setting" class="header-button-setting" />
+            <ui:Button name="close-buttonR" class="header-button-closeR" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</UXML>

@@ -1,0 +1,108 @@
+.status-card {
+    background-color: rgba(42, 42, 42, 1);
+    border-left-color: rgba(60, 60, 60, 1);
+    border-right-color: rgba(60, 60, 60, 1);
+    border-top-color: rgba(60, 60, 60, 1);
+    border-bottom-color: rgba(60, 60, 60, 1);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 1);
+    margin-right: 10px;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: rgba(51, 51, 51, 1);
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+
+.progress-fill {
+    height: 6px;
+    background-color: rgba(51, 204, 51, 1);
+    border-radius: 3px;
+    width: 0%;
+}
+
+.start-button {
+    width: 120px;
+    height: 35px;
+    background-color: rgba(230, 74, 25, 1);
+    color: white;
+    unity-font-style-and-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.stop-button {
+    width: 120px;
+    height: 35px;
+    background-color: rgba(77, 77, 77, 1);
+    color: white;
+    unity-font-style-and-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.refresh-button {
+    width: 120px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.info-card {
+    background-color: rgba(21, 21, 21, 1);
+    border-left-color: rgba(37, 37, 37, 1);
+    border-right-color: rgba(37, 37, 37, 1);
+    border-top-color: rgba(37, 37, 37, 1);
+    border-bottom-color: rgba(37, 37, 37, 1);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+.error-card {
+    background-color: rgba(204, 51, 51, 0.1);
+    border-left-color: rgba(204, 51, 51, 1);
+    border-right-color: rgba(204, 51, 51, 1);
+    border-top-color: rgba(204, 51, 51, 1);
+    border-bottom-color: rgba(204, 51, 51, 1);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}

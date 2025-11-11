@@ -1,0 +1,76 @@
+﻿.expandable-panel-root {
+    width: 100%;
+    height: 100%;
+}
+
+.panel-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    height: 50%;
+    z-index: 100;
+    background-color: #282828;
+}
+
+/* ScrollView container styling */
+.panel-text-scroller {
+    flex-grow: 1;
+    background-color: #282828;
+
+    min-height: 200px;
+}
+
+/* Force scrollbar visibility */
+.unity-scroll-view__vertical-scroller {
+    width: 18px;
+    min-width: 18px;
+    margin-right: 0;
+    margin-left: 2px;
+    background-color: transparent;
+    visibility: visible !important;
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+/* Style the scrollbar slider */
+.unity-base-slider__dragger {
+    background-color: #666666;
+    min-height: 40px;
+    width: 20px;
+    left: 2;
+}
+
+.unity-base-slider__dragger:hover {
+    background-color: #888888;
+}
+
+/* Style the scroll buttons */
+.unity-scroller__low-button,
+.unity-scroller__high-button {
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-width: 0;
+    color: transparent;
+}
+
+/* Style the text field */
+.panel-text-edit {
+    flex-grow: 1;
+    background-color: #282828;
+    margin-right: 20px; /* Make room for scrollbar */
+    min-height: 200px;
+}
+
+.panel-text-edit .unity-text-field__input {
+    background-color: #282828;
+    color: #ffffff;
+    border-width: 0;
+    font-size: 13px;
+    white-space: normal;
+    height: 100%;
+    padding: 10px;
+    min-height: 200px;
+}

@@ -1,0 +1,32 @@
+<ui:UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEngine.UIElements" xmlns:sawyer="Sawyer.Editor.UI.Components" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/USS/SawyerCommon.uss?fileID=7433441132597879392&amp;guid=8148d800217796d4a8edd40476cfe0d3&amp;type=3#SawyerCommon" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StepIndicator/StepIndicator.uss?fileID=7433441132597879392&amp;guid=5a9898be1d79c6f4cbf5f0b7873f8fe9&amp;type=3#StepIndicator" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StatusInfoCard/StatusInfoCard.uss?fileID=7433441132597879392&amp;guid=fedfc30ead89cf04886f0f108587c1c4&amp;type=3#StatusInfoCard" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/SuccessRing/SuccessRing.uss?fileID=7433441132597879392&amp;guid=b08b4887a5bb687489ac1abc6aa1dfe1&amp;type=3#SuccessRing" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/PrimaryActionButton/PrimaryActionButton.uss?fileID=7433441132597879392&amp;guid=fd5ab030c1227904890b8bf61cfb9743&amp;type=3#PrimaryActionButton" />
+    <ui:VisualElement name="content-container" class="content-container">
+        <ui:VisualElement name="top-area-bg" class="top-area-bg" />
+        <ui:VisualElement name="top-section" class="top-section" style="margin-top: 4.5%;">
+            <ui:VisualElement name="logo-wrapper" class="logo-wrapper">
+                <sawyer:LogoIcon name="logo-icon" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <sawyer:StepIndicator name="step-indicator" class="step-indicator-bar" style="margin-bottom: 1%;" />
+        <sawyer:PanelCard name="completion-card" class="panel-card-centered" >
+            <ui:Label name="title" text="Indexing Complete!" class="title" />
+            <ui:VisualElement class="status-info-brief-container">
+                <ui:Label text="Sawyer has successfully analyzed your codebase and is " class="status-info_brief__label" />
+                <ui:Label text="ready to assist you." class="status-info_brief__label" />
+            </ui:VisualElement>
+            <sawyer:SuccessRing name="success-ring" class="success-ring" style="align-self: center;" />
+            <ui:VisualElement class="status-info-container">
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:Image name="status-icon" class="status-info__icon" />
+                    <ui:Label name="status-count-label" class="status-info__label" />
+                </ui:VisualElement>
+                <ui:Label text="Files indexed" class="status-info_sub__label" />
+            </ui:VisualElement>
+        </sawyer:PanelCard>
+        <sawyer:PrimaryActionButton name="launch-button" text="Launch Sawyer" icon="arrow" class="button-footer-launch_sawyer" style="position: relative; left: auto; margin-top: 2%; bottom: auto;" />
+    </ui:VisualElement>
+</ui:UXML>

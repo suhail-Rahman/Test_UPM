@@ -1,0 +1,46 @@
+.radial-progress {
+    width: 120px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.radial-progress__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Percentage label styling */
+.radial-progress__label {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: white;
+    -unity-text-align: middle-center;
+}
+
+.radial-progress__label_loading {
+    position: absolute;
+    margin-left: 10px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    color: white;
+    -unity-text-align: middle-center;
+}
+
+/* Loading state - add smooth rotation styling */
+.radial-progress--loading .radial-progress-bar {
+    transition-property: rotate;
+    transition-duration: 0s; /* Instant updates for smooth animation */
+}
+
+/* Hidden state */
+.hidden {
+    display: none;
+}

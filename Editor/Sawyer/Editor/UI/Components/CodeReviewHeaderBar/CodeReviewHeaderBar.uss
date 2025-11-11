@@ -1,0 +1,84 @@
+﻿/* CodeReviewHeaderBar.uss - Simplified Version */
+
+.code-review-header-bar {
+    background-color: rgb(71, 71, 71); /* 0.28f, 0.28f, 0.28f */
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(89, 89, 89); /* 0.35f, 0.35f, 0.35f */
+    min-height: 32px;
+    flex-direction: column;
+}
+
+.header-main-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-height: 64px;
+}
+
+.header-left-side {
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-right: 8px;
+}
+
+.status-dot--orange {
+    background-color: rgb(255, 153, 0); /* 1f, 0.6f, 0f */
+}
+
+.status-dot--green {
+    background-color: rgb(51, 204, 51); /* 0.2f, 0.8f, 0.2f */
+}
+
+.status-dot--red {
+    background-color: rgb(204, 51, 51); /* 0.8f, 0.2f, 0.2f */
+}
+
+.status-dot--blue {
+    background-color: rgb(51, 153, 204); /* 0.2f, 0.6f, 0.8f */
+}
+
+.status-dot--gray {
+    background-color: rgb(153, 153, 153); /* 0.6f, 0.6f, 0.6f */
+}
+
+.file-name-label {
+    font-size: 13px;
+    color: white;
+    flex-grow: 1;
+}
+
+.header-right-side {
+    flex-direction: row;
+    align-items: center;
+}
+
+.expand-collapse-button {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0); /* Color.clear */
+    border-width: 0;
+    font-size: 12px;
+    color: rgb(179, 179, 179); /* 0.7f, 0.7f, 0.7f */
+}
+
+.collapse-button {
+    margin-right: 4px;
+    rotate: 90deg;
+}
+
+.expand-button {
+    rotate: -90deg;
+}

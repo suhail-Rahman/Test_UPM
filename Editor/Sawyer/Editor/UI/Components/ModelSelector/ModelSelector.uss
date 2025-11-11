@@ -1,0 +1,187 @@
+﻿/* StyledModelSelectorView.uss */
+
+.styled-model-selector {
+    position: relative;
+    width: 152px;
+    height: 21px;
+    align-self: center;
+}
+
+/* Main container - the clickable dropdown button */
+.styled-model-selector__container {
+    width: 144px;
+    height: 21px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: transparent;
+    border-width: 0;
+    cursor: link;
+}
+
+.styled-model-selector__container:hover {
+    /*background-color: rgba(255, 255, 255, 0.05);*/
+    border-radius: 2px;
+}
+
+.styled-model-selector__container--open {
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    border-radius: 2px;
+}
+
+/* Display label - shows the selected model name */
+.styled-model-selector__label {
+    color: #BDBDBD; /* Matches the SVG text color */
+    font-size: 11px;
+    -unity-text-align: middle-left;
+    -unity-font-style: normal;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Dropdown arrow - uses custom icon */
+.styled-model-selector__arrow {
+    width: 12px;
+    height: 10px;
+    margin-left: 4px;
+    align-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* Arrow animation on open - flip vertically for upward opening */
+.styled-model-selector__container--open .styled-model-selector__arrow {
+    scale: 1 -1; /* Flip vertically */
+    transition-duration: 0.2s;
+    transition-property: scale;
+}
+
+.styled-model-selector__arrow {
+    transition-duration: 0.2s;
+    transition-property: scale;
+}
+
+/* Dropdown menu - opens upward */
+.styled-model-selector__dropdown {
+    position: absolute;
+    bottom: 23px; /* Opens above the container */
+    left: 0;
+    right: 0;
+    height: 250px;
+    max-height: 250px;
+    background-color: #2B2B2B;
+    border-width: 1px;
+    border-color: #404040;
+    border-radius: 4px;
+    padding: 4px;
+    z-index: 1000;
+
+    /* Shadow effect */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Shadow points upward */
+}
+
+/* Options container - no scrolling */
+.styled-model-selector__options {
+    flex-direction: column;
+}
+
+/* Individual option styling */
+.styled-model-selector__option {
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 1px 0;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 2px;
+    color: #BDBDBD;
+    font-size: 11px;
+    -unity-text-align: middle-left;
+    -unity-font-style: normal;
+    cursor: link;
+    justify-content: flex-start;
+}
+
+.styled-model-selector__option:hover {
+    background-color: #404040;
+    color: #FFFFFF;
+}
+
+.styled-model-selector__option--selected {
+    background-color: #EC5B1F; /* Orange highlight for selected */
+    color: #FFFFFF;
+}
+
+.styled-model-selector__option--selected:hover {
+    background-color: #FF6B2F; /* Lighter orange on hover */
+}
+
+/* Disabled state */
+.styled-model-selector--disabled {
+    opacity: 0.5;
+}
+
+.styled-model-selector--disabled .styled-model-selector__container {
+    cursor: default;
+}
+
+.styled-model-selector--disabled .styled-model-selector__container:hover {
+    background-color: transparent;
+}
+
+.styled-model-selector--disabled .styled-model-selector__label {
+    color: #666666;
+}
+
+.styled-model-selector--disabled .styled-model-selector__arrow {
+    opacity: 0.5;
+}
+
+/* Loading state */
+.styled-model-selector__label--loading {
+    font-style: italic;
+    color: #888888;
+}
+
+/* Error state */
+.styled-model-selector__label--error {
+    color: #FF6B6B;
+}
+
+/* Focus state for accessibility */
+.styled-model-selector:focus .styled-model-selector__container {
+    border-width: 1px;
+    border-color: #FCF3EC;
+    border-radius: 2px;
+}
+
+/* Smooth transitions */
+.styled-model-selector__container,
+.styled-model-selector__option {
+    transition-duration: 0.15s;
+    transition-property: background-color, color;
+    transition-timing-function: ease-out;
+}
+
+/* Responsive behavior for smaller widths */
+.styled-model-selector--compact {
+    width: 100px;
+}
+
+.styled-model-selector--compact .styled-model-selector__container {
+    width: 100px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.styled-model-selector--compact .styled-model-selector__label {
+    font-size: 10px;
+}

@@ -1,0 +1,29 @@
+#server-overlay-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 30, 30, 0.95);
+    align-items: center;
+    justify-content: center;
+}
+
+#server-overlay-card {
+    background-color: rgb(45, 45, 45);
+    border-color: rgb(68, 68, 68);
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 30px;
+    min-width: 350px;
+    max-width: 450px;
+    align-items: center;
+}
+
+#server-overlay-card Button:hover {
+    background-color: rgb(230, 74, 25);
+}
+
+#server-overlay-card Button:active {
+    background-color: rgb(191, 54, 12);
+}

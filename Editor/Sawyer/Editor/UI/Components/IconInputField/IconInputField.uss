@@ -1,0 +1,73 @@
+ .icon-input-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 12px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    width: auto;
+    height: 52px;
+    align-self: stretch;
+    background-color: #282828;
+    border-radius: 5px;
+
+    /*font-family: 'Inter', sans-serif;*/
+    /*font-weight: 300;*/
+    font-size: 14px;
+    color: #CDCDCD;
+}
+
+.icon-input-field__icon-container {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.icon-input-field__icon {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 2px;
+}
+
+.icon-input-field__text-field {
+    flex-grow: 1;
+    height: 100%;
+    color: #CDCDCD;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 14px;
+    /*-unity-font: 300;*/
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+
+.icon-input-field__text-input {
+ flex-grow: 1;
+ height: 100%;
+ color: #CDCDCD;
+ background-color: transparent;
+ border-width: 0;
+ font-size: 14px;
+ /*-unity-font: 300;*/
+ padding: 0;
+ margin: 0;
+}
+
+.unity-base-text-field__input{
+    border-width: 0;
+    color: #CDCDCD;
+}
+
+.unity-base-text-field__input{
+ border-width: 0;
+ color: #CDCDCD;
+  margin-left: 10px;
+}

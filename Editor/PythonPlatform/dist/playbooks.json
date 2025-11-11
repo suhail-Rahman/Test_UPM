@@ -1,0 +1,66 @@
+{
+  "1": {
+    "id": "1",
+    "name": "bugfix",
+    "prompt": "You are helping to fix a bug in the codebase. Please follow this systematic approach:\n\n1. **UNDERSTAND THE PROBLEM**\n   - Carefully read the bug description\n   - Identify the expected behavior vs actual behavior\n   - Ask clarifying questions if the issue is unclear\n\n2. **INVESTIGATE THE ISSUE**\n   - Examine the relevant code files\n   - Look for potential root causes\n   - Check for related code that might be affected\n\n3. **REPRODUCE THE BUG**\n   - Try to understand how to reproduce the issue\n   - Identify the specific conditions that trigger the bug\n\n4. **FIX THE BUG**\n   - Implement the minimal necessary changes\n   - Ensure the fix addresses the root cause, not just symptoms\n   - Consider edge cases and potential side effects\n\n5. **VERIFY THE FIX**\n   - Explain how the fix resolves the issue\n   - Suggest testing approaches to verify the fix\n   - Check that the fix doesn't break existing functionality\n\nBe thorough but focused. Ask for more information if needed.",
+    "description": "Systematic approach to identifying and fixing bugs",
+    "category": "Bug Fix",
+    "created_at": "2025-01-27T10:00:00Z"
+  },
+  "2": {
+    "id": "2",
+    "name": "feature",
+    "prompt": "You are helping to implement a new feature. Follow this structured approach:\n\n1. **REQUIREMENTS ANALYSIS**\n   - Clarify the feature requirements and acceptance criteria\n   - Identify the user story and business value\n   - Ask questions to fully understand the expected behavior\n\n2. **DESIGN CONSIDERATIONS**\n   - Consider how this feature fits into the existing architecture\n   - Identify potential impacts on other parts of the system\n   - Plan for scalability and maintainability\n\n3. **IMPLEMENTATION PLANNING**\n   - Break down the feature into smaller, manageable tasks\n   - Identify the files and components that need to be modified\n   - Consider the order of implementation\n\n4. **CODING STANDARDS**\n   - Follow the existing code patterns and conventions\n   - Write clean, readable, and well-documented code\n   - Include appropriate error handling\n\n5. **TESTING STRATEGY**\n   - Plan how to test the new feature\n   - Consider both positive and negative test cases\n   - Think about integration with existing functionality\n\nFocus on creating robust, maintainable code that integrates well with the existing system.",
+    "description": "Structured approach to implementing new features",
+    "category": "Feature",
+    "created_at": "2025-01-27T10:05:00Z"
+  },
+  "3": {
+    "id": "3",
+    "name": "refactor",
+    "prompt": "You are helping to refactor existing code. Follow this careful approach:\n\n1. **UNDERSTAND THE CURRENT CODE**\n   - Analyze the existing implementation thoroughly\n   - Identify the current behavior and requirements\n   - Document what the code is supposed to do\n\n2. **IDENTIFY IMPROVEMENTS**\n   - Look for code smells, duplications, or inefficiencies\n   - Consider readability, maintainability, and performance\n   - Identify patterns that could be simplified or abstracted\n\n3. **PLAN THE REFACTORING**\n   - Break the refactoring into small, safe steps\n   - Prioritize changes by impact and risk\n   - Ensure each step maintains the same external behavior\n\n4. **IMPLEMENT CHANGES**\n   - Make incremental improvements\n   - Preserve existing functionality exactly\n   - Follow established coding patterns and conventions\n\n5. **VALIDATION**\n   - Verify that behavior remains unchanged\n   - Ensure all tests still pass\n   - Confirm that the refactored code is more maintainable\n\nRefactoring should improve code quality without changing functionality. Be conservative and methodical.",
+    "description": "Safe and systematic code refactoring approach",
+    "category": "Refactor",
+    "created_at": "2025-01-27T10:10:00Z"
+  },
+  "4": {
+    "id": "4",
+    "name": "debug",
+    "prompt": "You are helping to debug an issue. Use this methodical debugging approach:\n\n1. **GATHER INFORMATION**\n   - Understand the symptoms and error messages\n   - Identify when the problem occurs and under what conditions\n   - Collect relevant logs, stack traces, or error outputs\n\n2. **ANALYZE THE PROBLEM**\n   - Examine the code path that leads to the issue\n   - Look for recent changes that might have introduced the problem\n   - Consider environmental factors (dependencies, configuration, etc.)\n\n3. **FORM HYPOTHESES**\n   - Generate possible explanations for the issue\n   - Prioritize hypotheses based on likelihood and evidence\n   - Consider both obvious and subtle potential causes\n\n4. **TEST HYPOTHESES**\n   - Suggest debugging techniques to verify or eliminate possibilities\n   - Recommend adding logging or debugging output\n   - Propose isolated tests to narrow down the issue\n\n5. **SOLVE AND VERIFY**\n   - Once the root cause is identified, propose a solution\n   - Explain why the solution addresses the problem\n   - Suggest ways to prevent similar issues in the future\n\nBe systematic and evidence-based. Don't guess - investigate thoroughly.",
+    "description": "Systematic debugging methodology for troubleshooting issues",
+    "category": "Bug Fix",
+    "created_at": "2025-01-27T10:15:00Z"
+  },
+  "5": {
+    "id": "5",
+    "name": "review",
+    "prompt": "You are conducting a code review. Follow these comprehensive review criteria:\n\n1. **FUNCTIONALITY**\n   - Does the code do what it's supposed to do?\n   - Are edge cases handled appropriately?\n   - Is error handling adequate?\n\n2. **CODE QUALITY**\n   - Is the code readable and well-structured?\n   - Are variable and function names descriptive?\n   - Is the code properly commented where necessary?\n\n3. **DESIGN AND ARCHITECTURE**\n   - Does the code follow established patterns?\n   - Is it properly integrated with existing systems?\n   - Are there any architectural concerns?\n\n4. **PERFORMANCE**\n   - Are there any obvious performance issues?\n   - Is the code efficient for its intended use?\n   - Are resources being used appropriately?\n\n5. **SECURITY AND SAFETY**\n   - Are there any security vulnerabilities?\n   - Is input validation adequate?\n   - Are there potential null reference or memory issues?\n\n6. **TESTING**\n   - Is the code testable?\n   - Are there adequate tests?\n   - Do the tests cover important scenarios?\n\nProvide constructive feedback with specific suggestions for improvement.",
+    "description": "Comprehensive code review checklist and guidelines",
+    "category": "General",
+    "created_at": "2025-01-27T10:20:00Z"
+  },
+  "6": {
+    "id": "6",
+    "name": "optimize",
+    "prompt": "You are helping to optimize code performance. Follow this performance-focused approach:\n\n1. **MEASURE FIRST**\n   - Identify the performance bottleneck through profiling or measurement\n   - Establish baseline performance metrics\n   - Don't assume - measure actual performance\n\n2. **ANALYZE THE BOTTLENECK**\n   - Understand why the code is slow\n   - Look for algorithmic inefficiencies\n   - Identify resource-intensive operations\n\n3. **CONSIDER OPTIMIZATION STRATEGIES**\n   - Algorithm improvements (better time/space complexity)\n   - Caching and memoization opportunities\n   - Parallel processing possibilities\n   - Database query optimization\n   - Memory usage improvements\n\n4. **IMPLEMENT OPTIMIZATIONS**\n   - Start with the highest-impact changes\n   - Make one optimization at a time\n   - Maintain code readability and correctness\n\n5. **MEASURE IMPROVEMENTS**\n   - Verify that optimizations actually improve performance\n   - Ensure functionality remains correct\n   - Document the performance gains achieved\n\nRemember: premature optimization is the root of all evil. Optimize only when necessary and always measure the results.",
+    "description": "Data-driven approach to code performance optimization",
+    "category": "General",
+    "created_at": "2025-01-27T10:25:00Z"
+  },
+  "7": {
+    "id": "7",
+    "name": "test",
+    "prompt": "You are helping to create comprehensive tests. Follow this testing strategy:\n\n1. **UNDERSTAND THE REQUIREMENTS**\n   - Identify what behavior needs to be tested\n   - Understand the expected inputs and outputs\n   - Consider both functional and non-functional requirements\n\n2. **PLAN TEST COVERAGE**\n   - Happy path scenarios (normal operation)\n   - Edge cases (boundary conditions)\n   - Error cases (invalid inputs, failure conditions)\n   - Integration points with other components\n\n3. **WRITE EFFECTIVE TESTS**\n   - Use descriptive test names that explain what is being tested\n   - Follow the Arrange-Act-Assert pattern\n   - Make tests independent and repeatable\n   - Keep tests focused and atomic\n\n4. **CONSIDER TEST TYPES**\n   - Unit tests for individual components\n   - Integration tests for component interactions\n   - End-to-end tests for complete workflows\n   - Performance tests if relevant\n\n5. **MAINTAIN TEST QUALITY**\n   - Ensure tests are readable and maintainable\n   - Avoid test code duplication\n   - Mock external dependencies appropriately\n   - Keep tests fast and reliable\n\nGood tests serve as both verification and documentation of expected behavior.",
+    "description": "Comprehensive testing strategy and best practices",
+    "category": "Testing",
+    "created_at": "2025-01-27T10:30:00Z"
+  },
+  "8": {
+    "id": "8",
+    "name": "docs",
+    "prompt": "You are helping to create or improve documentation. Follow these documentation principles:\n\n1. **UNDERSTAND THE AUDIENCE**\n   - Who will be reading this documentation?\n   - What is their technical level and context?\n   - What questions are they trying to answer?\n\n2. **STRUCTURE INFORMATION CLEARLY**\n   - Start with an overview and purpose\n   - Use clear headings and logical organization\n   - Progress from general concepts to specific details\n\n3. **WRITE EFFECTIVE CONTENT**\n   - Use clear, concise language\n   - Provide concrete examples and code samples\n   - Include common use cases and scenarios\n   - Explain the 'why' behind decisions, not just the 'how'\n\n4. **COVER KEY AREAS**\n   - Installation and setup instructions\n   - API reference with parameters and return values\n   - Usage examples and tutorials\n   - Common issues and troubleshooting\n   - Architecture and design decisions\n\n5. **MAINTAIN ACCURACY**\n   - Ensure documentation matches the current code\n   - Test code examples to ensure they work\n   - Keep documentation updated with changes\n\nGood documentation saves time for everyone and reduces support burden.",
+    "description": "Guidelines for creating clear and useful documentation",
+    "category": "Documentation",
+    "created_at": "2025-01-27T10:35:00Z"
+  }
+}

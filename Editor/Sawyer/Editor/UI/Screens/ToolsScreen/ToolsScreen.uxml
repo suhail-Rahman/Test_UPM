@@ -1,0 +1,29 @@
+﻿<ui:UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:ui="UnityEngine.UIElements"
+         xmlns:sawyer="Sawyer.Editor.UI.Components" editor-extension-mode="False">
+    
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/IconInputField/IconInputField.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/USS/SawyerCommon.uss?fileID=7433441132597879392&amp;guid=33e2f81dcba6e2144801a40025c5cf31&amp;type=3#SawyerCommon" />
+    <ui:VisualElement name="root" class="root-container">
+        <sawyer:HeaderBar />
+
+        <ui:VisualElement class="modal-panel">
+            <ui:Label text="Here you can define what actions Sawyer can take. This is a way to quickly connect into all of your tools, and enable Sawyer to take actions with all of these tools. External tools are connected via MCP; learn more here." class="description-text"/>
+            
+            <!-- This ScrollView will be populated dynamically with tool sections -->
+            <ui:ScrollView class="tools-container">
+                <!-- Tool sections will be created dynamically based on server data -->
+            </ui:ScrollView>
+            
+            <!-- Optional: Add a refresh button -->
+            <ui:VisualElement class="button-row" style="margin-top: 20px;">
+                <ui:Button name="refresh-tools-button" text="Refresh Tools" class="save-button" />
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+        <ui:VisualElement name="error-bar" class="error-bar" style="display: none;">
+            <ui:VisualElement class="icon error-icon" />
+            <ui:Label name="validation-error" class="validation-error-text" text="An error occurred while managing tools." />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

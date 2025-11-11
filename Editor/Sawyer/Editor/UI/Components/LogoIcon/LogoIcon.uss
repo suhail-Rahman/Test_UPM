@@ -1,0 +1,31 @@
+﻿
+
+/* Optional variant with border */
+.logo-icon--with-border {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Optional variant with shadow effect */
+.logo-icon--with-shadow {
+    /* Note: Since UIElements doesn't directly support box-shadow, 
+       this is a placeholder for a custom solution using borders or effects */
+    /*border-width: 1px;*/
+    /*border-color: rgba(0, 0, 0, 0.1);*/
+    /*border-radius: 4px;*/
+}
+
+/* Light/dark theme adjustments if needed */
+.unity-editor-theme-light .logo-icon {
+    /* Light theme specific adjustments if needed */
+}
+
+.unity-editor-theme-dark .logo-icon {
+    /* Dark theme specific adjustments if needed */
+}
+
+/* Hidden state */
+.logo-icon--hidden {
+    display: none;
+}

@@ -1,0 +1,95 @@
+/* OptionalKeysSection.uss */
+
+.optional-keys-section {
+
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+
+}
+
+/* Header */
+.optional-keys__header {
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.optional-keys__header:hover {
+    opacity: 0.9;
+}
+
+.optional-keys__header:active {
+    opacity: 0.8;
+}
+
+/* Toggle icon */
+.optional-keys__toggle-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+    
+}
+.optional-keys__header-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 4px;
+
+}
+
+.optional-keys__header-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.optional-keys__header-label {
+    font-size: 12px;
+    color: white;
+    -unity-font: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/font/Inter_18pt-Thin.ttf");
+    -unity-font-style: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.optional-keys__header-label_main {
+    font-size: 12px;
+    color: white;
+    -unity-font: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/font/Inter_18pt-Thin.ttf");
+    -unity-font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header label */
+.optional-keys__header-label {
+    color: white;
+    font-size: 14px;
+}
+
+/* Content container */
+.optional-keys__content {
+    padding: 8px 0;
+    flex-direction: column;
+    margin-left: 2px;
+    display: none;
+}
+
+/* Input fields */
+.optional-keys__input {
+    
+}
+
+/* Anthropic specific styling */
+.input-field-anthropic .icon-input-field__icon {
+    -unity-background-image-tint-color: #A259FF; /* Purple for Anthropic */
+}
+
+/* Deepseek specific styling */
+.input-field-deepseek .icon-input-field__icon {
+    -unity-background-image-tint-color: #2196F3; /* Blue for Deepseek */
+}

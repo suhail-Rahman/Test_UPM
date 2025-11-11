@@ -1,0 +1,79 @@
+<UXML xmlns="UnityEngine.UIElements"
+      xmlns:ui="UnityEngine.UIElements"
+      xmlns:sawyer="Sawyer.Editor.UI.Components">
+
+    <!-- Styles -->
+    <Style src="../../USS/SawyerCommon.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/StepIndicator/StepIndicator.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/IconInputField/IconInputField.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/BottomBanner/BottomBanner.uss" />
+    <Style src="project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Editor/UI/Components/NextButton/NextButton.uss" />
+    <ui:VisualElement name="content-container" class="content-container">
+    <!-- Top Logo -->
+        
+    <ui:VisualElement name="top-area-bg" class="top-area-bg"/>
+    <ui:VisualElement name="top-section" class="top-section">
+        <ui:VisualElement name="logo-wrapper" class="logo-wrapper">
+            <sawyer:LogoIcon name="logo-icon" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+
+
+
+    <!-- Step Indicator -->
+    <sawyer:StepIndicator name="step-indicator" class="step-indicator-bar" />
+
+    <!-- Card Content -->
+    <sawyer:PanelCard name="card" class="card">
+        
+        <!-- Title and subtitle -->
+        
+            <ui:Label name="title" class="title" text="Connect with OpenAI" />
+            <ui:Label name="subtitle" class="subtitle" text="Sawyer uses Open AI models to understand and assist with your code." />
+
+
+        <!-- Input Section -->
+        <ui:VisualElement name="inputs-container" class="inputs-container">
+
+            <!-- OpenAI Input -->
+            <sawyer:IconInputField
+                name="openai-key"
+                class="input-field"
+                placeholder="Enter your OpenAI API key (sk-...)"
+                icon="Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_key.png" />
+            <ui:VisualElement name="divider" class="divider"/>
+           
+
+            <!-- Divider (hidden by default) -->
+            
+
+            <sawyer:OptionalKeysSection name="optional-section"  class="optional-section"/>
+
+        </ui:VisualElement>
+    </sawyer:PanelCard>
+
+    
+    
+   
+        
+
+
+    <!-- Navigation Buttons -->
+    <ui:VisualElement name="nav-buttons" class="nav-buttons">
+        <sawyer:NextButton
+            name="back-button"
+            class="nav-button"
+            text="←"
+            style="visibility: hidden;" />
+        <sawyer:NextButton
+            name="next-button"
+            is-forward="false"/>
+    </ui:VisualElement>
+    <!-- Error Banner with fixed positioning at bottom of screen -->
+    <ui:VisualElement name="error-bar" class="error-bar" style="display: none;">
+        <ui:VisualElement class="icon error-icon" />
+        <ui:Label name="validation-error" class="validation-error-text" text="Please enter a valid OpenAI API key." />
+    </ui:VisualElement>
+
+    </ui:VisualElement>
+</UXML>

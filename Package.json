@@ -1,0 +1,24 @@
+{
+  "name": "com.unakin.sawyer-ai",
+  "version": "1.0.0",
+  "displayName": "Sawyer AI",
+  "description": "AI-powered Unity development assistant with code generation and project management capabilities",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/suhail-Rahman/Test_UPM",
+  "changelogUrl": "https://github.com/suhail-Rahman/Test_UPM/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/suhail-Rahman/Test_UPM/blob/main/LICENSE.md",
+  "dependencies": {},
+  "keywords": [
+    "ai",
+    "assistant",
+    "code-generation",
+    "unity",
+    "development-tools"
+  ],
+  "author": {
+    "name": "Unakin",
+    "email": "support@unakin.com",
+    "url": "https://www.unakin.com"
+  }
+}

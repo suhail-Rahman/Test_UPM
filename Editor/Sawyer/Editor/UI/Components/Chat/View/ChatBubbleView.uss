@@ -1,0 +1,794 @@
+﻿.chat-bubble {
+    flex-grow: 1;
+    margin: 6px;
+
+    border-radius: 8px;
+    max-width: 100%;
+    color: #fff;
+    width: 100%;
+}
+
+.sawyer-rejection {
+    background-color: #482829;
+    border-width: 1px ;
+    border-color: #ff6d6d;
+    color: #ffecec;
+}
+
+
+#root {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.chat-bubble.user {
+    background-color: #2A2A2A;
+    align-self: flex-end;
+    color: white;
+    padding: 12px 16px;
+    margin-left: 50px;
+    margin-top: 9px;
+}
+.unity-label{
+    font-size: 14px;
+}
+.chat-bubble.assistant {
+    align-self: flex-start;
+    background-color: transparent;
+    color: white;
+    padding: 6px 16px;
+}
+
+.chat-bubble.code {
+    background-color: #1E1E1E;
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.chat-bubble.action {
+    background-color: #333333;
+    color: #AAAAAA;
+    -unity-font-style: italic;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 4px auto;
+    width: auto;
+    align-self: center;
+}
+
+.chat-bubble.streaming {
+    background-color: rgba(80, 80, 80, 0.1);
+}
+
+.chat-bubble-content {
+    width: 100%;
+    align-self: center;
+}
+
+/* Paragraph spacing */
+.markdown-paragraph {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    display: flex;
+    padding: 0;
+    margin: 4px 0 12px 0;
+}
+
+.markdown-paragraph > Label {
+    font-size: 14px;
+    -unity-font-style: normal;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    color: #e8e8e8;
+}
+
+/* Enhanced text styling */
+.markdown-span-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.markdown-bold {
+    -unity-font-style: bold;
+    color: #ffffff;
+}
+
+.markdown-italic {
+    -unity-font-style: italic;
+}
+
+.markdown-bold-italic {
+    -unity-font-style: bold-and-italic;
+    color: #ffffff;
+}
+
+.markdown-strikethrough {
+    color: #888888;
+    text-decoration: line-through;
+    text-decoration-color: #888888;
+}
+
+.markdown-highlight {
+    background-color: rgba(255, 255, 0, 0.3);
+    color: #ffffff;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Enhanced heading styles */
+.markdown-heading {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.markdown-h1 {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.markdown-h2 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.markdown-h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.selectable {
+    -unity-user-select: text;
+}
+
+.md-h1 {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.md-h2 {
+    font-size: 28px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.md-h3 {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 6px 0;
+    width: 100%;
+}
+
+.md-h4 {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.md-h5 {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 4px 0;
+    width: 100%;
+}
+
+.md-h6 {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 3px 0;
+    width: 100%;
+}
+
+/* Horizontal rule */
+.markdown-hr {
+    height: 1px;
+    background-color: #444;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* Inline code styling */
+.markdown-inline-code {
+    background-color: #2e2e2e;
+    padding: 0 6px;
+    margin-top: -1px;
+    border-radius: 4px;
+    color: #f0c674;
+    font-size: 14px;
+    border-width: 1px;
+    border-color: #404040;
+    font-family: 'Courier New', monospace;
+}
+
+/* Link styling */
+.markdown-link, .md-link {
+    color: #6bb6ff;
+    cursor: link;
+}
+
+.markdown-link:hover, .md-link:hover {
+    color: #8cc8ff;
+    text-decoration: underline;
+}
+
+/* List improvements */
+.markdown-list {
+    margin: 8px 0 12px 0;
+    width: 100%;
+}
+
+.ordered-list {
+}
+
+.bullet-container {
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 6px;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.bullet-point {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #ffffff;
+    min-width: 16px;
+    flex-shrink: 0;
+    -unity-text-align: upper-center;
+}
+
+.bullet-text {
+    flex-grow: 1;
+    white-space: normal;
+}
+
+/* Enhanced Task list styling */
+.markdown-task-item {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+}
+
+.task-checkbox-container {
+    width: 24px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.task-checkbox {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    border-color: #666;
+    border-radius: 3px;
+    background-color: transparent;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.task-checked {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    border-radius: 3px;
+    position: relative;
+    flex-shrink: 0;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.task-unchecked {
+    background-color: transparent;
+    border-color: #666;
+}
+
+/* Simulated checkmark using background image or color */
+.task-checked {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    border-radius: 3px;
+    position: relative;
+    flex-shrink: 0;
+    background-color: #4CAF50;
+    border-color: #666;
+}
+
+.task-text {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #e8e8e8;
+    display: flex;
+    align-items: flex-start;
+}
+
+.task-text.task-completed {
+    color: #888888;
+    text-decoration: line-through;
+}
+
+/* Blockquote styling */
+.markdown-blockquote {
+    padding-left: 12px;
+    border-left-width: 4px;
+    border-left-color: #666;
+    margin: 8px 0;
+    color: #aaaaaa;
+}
+
+/* Table styling */
+.markdown-table-container {
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+    overflow-x: auto;
+}
+
+.markdown-table {
+    border-width: 1px;
+    border-color:  #404040;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.markdown-table-row {
+    flex-direction: row;
+    border-bottom-width: 1px;
+    border-bottom-color: #404040;
+}
+
+.markdown-table-header {
+    background-color: #333;
+    border-bottom-width: 2px;
+    border-bottom-color: #555;
+    flex-direction: row;
+}
+
+.markdown-table-cell {
+    flex-grow: 1;
+    padding: 8px 10px;
+    color: #cccccc;
+    border-right-width: 1px;
+    border-right-color: #404040;
+}
+
+.markdown-table-header-cell {
+    flex-grow: 1;
+    padding: 10px;
+    color: #ffffff;
+    -unity-font-style: bold;
+    border-right-width: 1px;
+    border-right-color: #404040;
+}
+
+/* Footnote styling */
+.markdown-footnotes-heading {
+    font-size: 16px;
+    -unity-font-style: bold;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.markdown-footnote-item {
+    flex-direction: row;
+    margin-bottom: 6px;
+    padding-left: 12px;
+}
+
+.markdown-footnote-label {
+    min-width: 40px;
+    color: #999;
+}
+
+.markdown-footnote-content {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.markdown-footnote-ref {
+    color: #6bb6ff;
+    font-size: 14px;
+    padding-top: 2px;
+    margin: 0 2px;
+}
+
+/* Math expression styling */
+.markdown-math-block {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border-left-width: 3px;
+    border-left-color: #666;
+}
+
+.markdown-math-content {
+    font-family: 'Courier New', monospace;
+    color: #e0e0e0;
+    -unity-text-align: middle-center;
+    white-space: pre-wrap;
+}
+
+.markdown-math-inline {
+    font-family: 'Courier New', monospace;
+    color: #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+/* Subscript and superscript */
+.markdown-subscript {
+    font-size: 10px;
+    margin-bottom: -3px;
+}
+
+.markdown-superscript {
+    font-size: 10px;
+    margin-top: -3px;
+}
+
+/* Emoji */
+.markdown-emoji {
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+/* Code block improvements */
+.markdown-code-block {
+    position: relative;
+    padding: 0;
+    margin: 8px 0;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: #333;
+    width: 100%;
+}
+
+.markdown-bold {
+    -unity-font-style: bold;
+}
+
+.markdown-italic {
+    -unity-font-style: italic;
+}
+
+.markdown-bold-italic {
+    -unity-font-style: bold-and-italic;
+}
+
+/* Code header styling */
+.code-header {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    padding: 6px 12px;
+    border-bottom-width: 1px;
+    border-bottom-color: #333;
+}
+
+.code-file-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_file.png");
+    margin-right: 6px;
+}
+
+.code-file-label {
+    -unity-font-style: bold;
+    margin-right: 6px;
+    color: #e0e0e0;
+    font-size: 13px;
+}
+
+.code-title-label {
+    color: #e0e0e0;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.code-lang-container {
+    background-color: #333;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 8px;
+}
+
+.code-lang-label {
+    color: #888;
+    font-size: 11px;
+    margin: 0;
+}
+
+.code-actions {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Code content area */
+.code-content-area {
+    padding: 12px 16px;
+    background-color: #1a1a1a;
+}
+
+.code-line {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+    min-height: 1px;
+}
+
+.code-token {
+    font-size: 13px;
+    white-space: pre-wrap;
+}
+
+/* Syntax highlighting colors */
+.code-keyword {
+    color: #c678dd;
+    -unity-font-style: bold;
+}
+
+.code-type {
+    color: #56b6c2;
+}
+
+.code-class {
+    color: #e06c75;
+}
+
+.code-string {
+    color: #98c379;
+}
+
+.code-number {
+    color: #d19a66;
+}
+
+.code-comment {
+    color: #5c6370;
+    -unity-font-style: italic;
+}
+
+.code-method {
+    color: #61aeee;
+}
+
+.code-property {
+    color: #e5c07b;
+}
+
+.code-punctuation {
+    color: #abb2bf;
+}
+
+.code-selector {
+    color: #e06c75;
+}
+
+.code-attribute {
+    color: #d19a66;
+}
+
+.code-value {
+    color: #98c379;
+}
+
+.code-tag {
+    color: #e06c75;
+}
+
+.code-identifier {
+    color: #abb2bf;
+}
+
+/* Language-specific styling */
+.code-lang-csharp .code-property {
+    color: #e5c07b;
+}
+
+.code-lang-javascript .code-property {
+    color: #56b6c2;
+}
+
+.code-lang-html .code-tag {
+    color: #e06c75;
+}
+
+.code-lang-css .code-property {
+    color: #56b6c2;
+}
+
+/* Copy button styling */
+.copy-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.8;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.copy-button:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.copy-button.copied {
+    background-color: rgba(80, 200, 120, 0.2);
+}
+
+.copy-icon {
+    width: 14px;
+    height: 14px;
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_copy.png");
+    margin-right: 4px;
+}
+
+.copy-button.copied .copy-icon {
+    background-image: url("project://database/Packages/com.unakin.sawyer-ai/Editor/Sawyer/Resources/icon_tick.png");
+    width: 12px;
+    height: 12px;
+}
+
+.copy-button-label {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* User icon styling */
+.user-chat-bubble {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 15px;
+    margin: 10px 0 10px 10px;
+    width: 34px;
+    height: 34px;
+    background-color: #EC5B1F;
+    border-radius: 6px;
+    flex: none;
+    flex-grow: 0;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.user-chat-label {
+    width: 20px;
+    height: 16px;
+    font-size: 14px;
+    -unity-text-align: middle-center;
+    color: #F5F5F5;
+    flex: none;
+    flex-grow: 0;
+    -unity-font-style: bold;
+}
+
+/* Attachment styling */
+.attachment-row {
+    margin-top: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.attachment-thumbnail {
+    margin: 4px;
+    border-radius: 6px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: #444;
+    transition: border-color 0.2s;
+}
+
+.attachment-thumbnail:hover {
+    border-color: #666;
+}
+
+.attachment-remove-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 2px;
+    border-width: 1px ;
+    border-color:  rgba(255, 255, 255, 0.3);
+}
+
+/* Streaming indicator */
+.streaming-live-line {
+    color: #e8e8e8;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.tool-message-container
+{
+    padding-left: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add these styles to your ChatBubbleView.uss file */
+
+/* Action message styling - grey and different appearance */
+.chat-bubble.action .action-message-container {
+    background-color: rgba(68, 68, 68, 0.3);
+    border-left: 3px solid #666666;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 4px 0;
+}
+
+.chat-bubble.action .action-message-text {
+    color: #888888;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.3;
+    opacity: 0.85;
+}
+
+/* Additional styling for batch execution messages */
+.chat-bubble.batch-execution .action-message-container {
+    background-color: rgba(60, 60, 60, 0.4);
+    border-left-color: #777777;
+}
+
+.chat-bubble.batch-completed .action-message-text {
+    color: #999999;
+    font-size: 11px;
+}
+
+/* Ensure action bubbles don't get regular chat styling */
+.chat-bubble.action .chat-bubble-content {
+    background-color: transparent;
+    padding: 2px;
+}

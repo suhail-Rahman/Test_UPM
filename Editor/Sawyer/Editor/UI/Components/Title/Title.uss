@@ -1,0 +1,23 @@
+﻿/* Assets/Editor/Sawyer/Editor/UI/Components/Title/Title.uss */
+.title-component {
+    width: 100%;
+    height: 30%;
+    flex-grow: 1;
+}
+
+.title-container {
+    width: 100%;
+    height: 30%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 30px;
+}
+
+.title-label {
+    -unity-font-style: bold;
+    color: rgb(240, 240, 240);
+    -unity-text-align: middle-center;
+    height: 100%;
+}
