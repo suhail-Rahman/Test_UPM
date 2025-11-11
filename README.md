@@ -40,9 +40,9 @@ For detailed documentation, visit: [Sawyer AI Documentation](https://docs.unakin
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/unakin/sawyer-ai/issues)
+- **Issues**: [GitHub Issues]
 - **Email**: support@unakin.com
-- **Discord**: [Unakin Community](https://discord.gg/unakin)
+- **Discord**: [Unakin Community]
 
 ## License
 
